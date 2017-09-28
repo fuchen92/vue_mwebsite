@@ -1,23 +1,57 @@
 <template>
-  <div id="app">
-    <img src="./assets/logo.png">
-    <router-view></router-view>
-  </div>
+	<div id="app">
+		<div class="wrapper">
+			<app-header></app-header>
+			<app-menu :menuList="menuList"></app-menu>
+			<!-- <router-view></router-view> -->
+		</div>
+	</div>
 </template>
 
 <script>
+import appHeader from "@/components/app-header.vue";
+import appMenu from "@/components/app-menu.vue";
 export default {
-  name: 'app'
+	name: 'app',
+	components: {
+		"app-header": appHeader,
+		"app-menu": appMenu
+	},
+	data () {
+		return {
+			menuList: [
+				{ link: "/", text: "首页" },
+				{ link: "/online", text: "在线旅游" },
+				{ link: "/hotel", text: "酒店" },
+				{ link: "/airline", text: "航空公司" },
+				{ link: "/destination", text: "出入境及目的地" },
+				{ link: "/investment", text: "投资并购" },
+				{ link: "/distributor", text: "旅游分销商" },
+				{ link: "/tech", text: "旅游科技" },
+				{ link: "/system", text: "旅游分销系统" },
+				{ link: "/mice", text: "商务及奖励旅游" },
+				{ link: "/cruise", text: "油轮" },
+				{ link: "/carrent", text: "租车" },
+				{ link: "/airport", text: "机场" },
+				{ link: "/railway", text: "高铁" },
+				{ link: "/recommend", text: "推荐" },
+				{ link: "/review", text: "评论" },
+				{ link: "/translate", text: "译讯" },
+				{ link: "/lab", text: "创业" },
+				{ link: "/digest", text: "精选" }
+			]
+		}
+	}
 }
 </script>
 
-<style>
+<style lang="less">
+@import "./assets/basic.less";
 #app {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
+	width: 100%;
+	height: 100%;
+}
+.wrapper {
+	margin-top: 100px;
 }
 </style>
