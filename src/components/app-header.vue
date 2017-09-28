@@ -31,7 +31,7 @@ export default {
 		left: 0;
 		width: 100%;
 		height: 50px;
-		background-color: #fff;
+		background-color: @init-color;
 		border-bottom: 1px solid #DFDFDF;
 		z-index: 10;
 	}
