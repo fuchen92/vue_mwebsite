@@ -52,6 +52,9 @@ export default {
 		font-size: 16px;
 		margin-right: 20px;
 	}
+	.menu-item:last-child {
+		margin-right: 0;
+	}
 	.menu-link {
 		line-height: 38px;
 		margin-top: 10px;
