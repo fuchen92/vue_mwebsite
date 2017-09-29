@@ -314,18 +314,6 @@ export default {
 		font-size: 17px;
 		line-height: 35px;
 	}
-	.a1 {
-		background-image: url(../assets/icons/icon-1a.png);
-	}
-	.c1 {
-		background-image: url(../assets/icons/icon-1c.png);
-	}
-	.a2 {
-		background-image: url(../assets/icons/icon-2a.png);
-	}
-	.b2 {
-		background-image: url(../assets/icons/icon-2b.png);
-	}
 	.generate-background(@n, @i: 1) when (@i <= @n) {
 
 	}
