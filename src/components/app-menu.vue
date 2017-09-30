@@ -20,6 +20,46 @@ export default {
 			required: true,
 			type: Array
 		}
+	},
+	data () {
+		return {
+			urlPath: "",
+		}
+	},
+	watch: {
+		"$route": function (to, from) {
+			this.urlPath = to.path;
+			console.log(this.urlPath)
+			// setTimeout(() => {
+				console.log(document.getElementsByClassName("menu-active")[0].parentElement)
+				this.scrollMenu();
+			// }, 500)
+		}
+	},
+	created () {
+		this.urlPath = this.$route.path;
+		console.log(this.urlPath)
+		console.log("创建了")
+	},
+	mounted () {
+		this.scrollMenu();
+		console.log("挂载了")
+	},
+
+	updated () {
+		console.log("更新了")
+	},
+	methods: {
+		scrollMenu () {
+			var menuContainer = document.getElementsByClassName("menu-list")[0],
+				menuContainerWidth = menuContainer.offsetWidth,
+				targetEle = document.getElementsByClassName("menu-active")[0].parentElement,
+				eleLeft = targetEle.offsetLeft;
+
+			var slideLeft = eleLeft - (menuContainerWidth / 2) + (targetEle.offsetWidth / 2);
+			menuContainer.scrollLeft = slideLeft;
+			// menuContainer.style.marginLeft = -slideLeft + "px"
+		}
 	}
 }
 </script>
@@ -36,6 +76,7 @@ export default {
 		transition: top 0.1s;
 	}
 	.menu-list {
+		position: relative;
 		width: 100%;
 		height: 50px;
 		white-space: nowrap;

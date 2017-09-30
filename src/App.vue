@@ -1,9 +1,9 @@
 <template>
 	<div id="app">
 		<div class="wrapper">
-			<app-header></app-header>
+			<app-header @showCategory="showCategory"></app-header>
 			<app-menu :menuList="menuList"></app-menu>
-			<sider-bar></sider-bar>
+			<sider-bar :isShowCategory="isShowCategory" @hideCategory="hideCategory"></sider-bar>
 			<!-- <router-view></router-view> -->
 		</div>
 	</div>
@@ -42,7 +42,16 @@ export default {
 				{ link: "/translate", text: "译讯" },
 				{ link: "/lab", text: "创业" },
 				{ link: "/digest", text: "精选" }
-			]
+			],
+			isShowCategory: false
+		}
+	},
+	methods: {
+		showCategory () {
+			this.isShowCategory = true;
+		},
+		hideCategory () {
+			this.isShowCategory = false;
 		}
 	}
 }

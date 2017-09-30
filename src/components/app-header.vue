@@ -1,7 +1,7 @@
 <template>
 	<nav class="nav">
 		<div class="container">
-			<div class="hamburger-menu lt">
+			<div class="hamburger-menu lt" @click="showCategory">
 				<div class="hamburger-item hamburger-top"></div>
 				<div class="hamburger-item hamburger-middle"></div>
 				<div class="hamburger-item hamburger-bottom"></div>
@@ -18,7 +18,12 @@
 
 <script>
 export default {
-	name: "appHeader"
+	name: "appHeader",
+	methods: {
+		showCategory: function () {
+			this.$emit("showCategory");
+		}
+	}
 }
 </script>
 

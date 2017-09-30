@@ -1,143 +1,143 @@
 <template>
-	<div class="siderbar">
+	<div class="siderbar" :class="{ 'siderbar-category-active': isShowCategory }">
 		<div class="container">
-			<div class="close-siderbar">×</div>
+			<div class="close-siderbar" @click="closeCategory">×</div>
 			<div class="category-list-container">
 				<div class="category-list">
 					<h3 class="category-title">新闻</h3>
 					<div class="category-group">
 						<div class="category-item lt">
-							<router-link class="category-link" to="/recommend">
+							<a class="category-link" href="#/recommend" @click="closeCategory">
 								<span class="category-icon a1"></span>
 								<span class="category-name">编辑推荐</span>
-							</router-link>
+							</a>
 						</div>
 						<div class="category-item lt">
-							<router-link class="category-link" to="/review">
+							<a class="category-link" href="#/review" @click="closeCategory">
 								<span class="category-icon a2"></span>
 								<span class="category-name">评论</span>
-							</router-link>
+							</a>
 						</div>
 					</div>
 					<div class="category-group">
 						<div class="category-item lt">
-							<router-link class="category-link" to="/translate">
+							<a class="category-link" href="#/translate" @click="closeCategory">
 								<span class="category-icon a3"></span>
 								<span class="category-name">译讯</span>
-							</router-link>
+							</a>
 						</div>
 						<div class="category-item lt">
-							<router-link class="category-link" to="/lab">
+							<a class="category-link" href="#/lab" @click="closeCategory">
 								<span class="category-icon a4"></span>
 								<span class="category-name">创业</span>
-							</router-link>
+							</a>
 						</div>
 					</div>
 					<div class="category-group">
 						<div class="category-item lt">
-							<router-link class="category-link" to="/digest">
+							<a class="category-link" href="#/digest" @click="closeCategory">
 								<span class="category-icon a5"></span>
 								<span class="category-name">精选</span>
-							</router-link>
+							</a>
 						</div>
 					</div>
 					<div class="divide"></div>
 					<div class="category-group">
 						<div class="category-item lt">
-							<router-link class="category-link" to="/online">
+							<a class="category-link" href="#/online" @click="closeCategory">
 								<span class="category-icon b1"></span>
 								<span class="category-name">在线旅游</span>
-							</router-link>
+							</a>
 						</div>
 						<div class="category-item lt newline">
-							<router-link class="category-link" to="/hotel">
+							<a class="category-link" href="#/hotel" @click="closeCategory">
 								<span class="category-icon b2"></span>
 								<span class="category-name">酒店</span>
-							</router-link>
+							</a>
 						</div>
 					</div>
 					<div class="category-group">
 						<div class="category-item lt">
-							<router-link class="category-link" to="/airline">
+							<a class="category-link" href="#/airline" @click="closeCategory">
 								<span class="category-icon b3"></span>
 								<span class="category-name">航空公司</span>
-							</router-link>
+							</a>
 						</div>
 						<div class="category-item lt newline">
-							<router-link class="category-link" to="/destination">
+							<a class="category-link" href="#/destination" @click="closeCategory">
 								<span class="category-icon b4"></span>
 								<span class="category-name">出入境及目的地</span>
-							</router-link>
+							</a>
 						</div>
 					</div>
 					<div class="category-group">
 						<div class="category-item lt">
-							<router-link class="category-link" to="/investment">
+							<a class="category-link" href="#/investment" @click="closeCategory">
 								<span class="category-icon b5"></span>
 								<span class="category-name">投资并购</span>
-							</router-link>
+							</a>
 						</div>
 						<div class="category-item lt newline">
-							<router-link class="category-link" to="/distributor">
+							<a class="category-link" href="#/distributor" @click="closeCategory">
 								<span class="category-icon b6"></span>
 								<span class="category-name">旅游分销商</span>
-							</router-link>
+							</a>
 						</div>
 					</div>
 					<div class="category-group">
 						<div class="category-item lt">
-							<router-link class="category-link" to="/tech">
+							<a class="category-link" href="#/tech" @click="closeCategory">
 								<span class="category-icon b7"></span>
 								<span class="category-name">旅游科技</span>
-							</router-link>
+							</a>
 						</div>
 						<div class="category-item lt newline">
-							<router-link class="category-link" to="/system">
+							<a class="category-link" href="#/system" @click="closeCategory">
 								<span class="category-icon b8"></span>
 								<span class="category-name">旅游分销系统</span>
-							</router-link>
+							</a>
 						</div>
 					</div>
 					<div class="category-group">
 						<div class="category-item lt">
-							<router-link class="category-link" to="/cruise">
+							<a class="category-link" href="#/cruise" @click="closeCategory">
 								<span class="category-icon b9"></span>
 								<span class="category-name">邮轮</span>
-							</router-link>
+							</a>
 						</div>
 						<div class="category-item lt newline">
-							<router-link class="category-link" to="/mice">
+							<a class="category-link" href="#/mice" @click="closeCategory">
 								<span class="category-icon b10"></span>
 								<span class="category-name">商务及奖励旅游</span>
-							</router-link>
+							</a>
 						</div>
 					</div>
 					<div class="category-group">
 						<div class="category-item lt">
-							<router-link class="category-link" to="/carrent">
+							<a class="category-link" href="#/carrent" @click="closeCategory">
 								<span class="category-icon b11"></span>
 								<span class="category-name">租车</span>
-							</router-link>
+							</a>
 						</div>
 						<div class="category-item lt newline">
-							<router-link class="category-link" to="/airport">
+							<a class="category-link" href="#/airport" @click="closeCategory">
 								<span class="category-icon b12"></span>
 								<span class="category-name">机场</span>
-							</router-link>
+							</a>
 						</div>
 					</div>
 					<div class="category-group">
 						<div class="category-item lt">
-							<router-link class="category-link" to="/railway">
+							<a class="category-link" href="#/railway" @click="closeCategory">
 								<span class="category-icon b13"></span>
 								<span class="category-name">高铁</span>
-							</router-link>
+							</a>
 						</div>
 						<div class="category-item lt newline">
-							<router-link class="category-link" to="/company">
+							<a class="category-link" href="#/company" @click="closeCategory">
 								<span class="category-icon b14"></span>
 								<span class="category-name">企业新闻</span>
-							</router-link>
+							</a>
 						</div>
 					</div>
 				</div>
@@ -147,7 +147,7 @@
 						<template v-for="(subcategory, idx) in category.subcategory">
 							<div class="category-group" :key="subcategory.text">
 								<div class="category-item lt only-contain-one">
-									<a class="category-link" :href="subcategory.link">
+									<a class="category-link" :href="subcategory.link" @click="closeCategory">
 										<span class="category-icon" :class="subcategory.className"></span>
 										<span class="category-name">{{ subcategory.text }}</span>
 									</a>
@@ -164,6 +164,12 @@
 <script>
 export default {
 	name: "siderbar",
+	props: {
+		isShowCategory: {
+			required: true,
+			type: Boolean
+		}
+	},
 	data () {
 		return {
 			categoryList: [
@@ -237,15 +243,21 @@ export default {
 				}
 			]
 		}
+	},
+	methods: {
+		closeCategory () {
+			this.$emit("hideCategory");
+		}
 	}
 }
 </script>
 
-<style lang="less">
+<style lang="less" scoped>
 	@import "../assets/variable.less";
 	.siderbar {
 		position: fixed;
 		top: 0;
+		left: -100%;
 		width: 100%;
 		height: 100%;
 		background-color: @basic-color;
@@ -254,6 +266,9 @@ export default {
 			overflow-y: scroll;
 			-webkit-overflow-scrolling: touch;
 		}
+	}
+	.siderbar-category-active {
+		left: 0;
 	}
 	.close-siderbar {
 		position: absolute;
