@@ -14,7 +14,7 @@
 						</div>
 						<div class="category-item lt">
 							<router-link class="category-link" to="/review">
-								<span class="category-icon c1"></span>
+								<span class="category-icon a2"></span>
 								<span class="category-name">评论</span>
 							</router-link>
 						</div>
@@ -22,13 +22,13 @@
 					<div class="category-group">
 						<div class="category-item lt">
 							<router-link class="category-link" to="/translate">
-								<span class="category-icon b1"></span>
+								<span class="category-icon a3"></span>
 								<span class="category-name">译讯</span>
 							</router-link>
 						</div>
 						<div class="category-item lt">
 							<router-link class="category-link" to="/lab">
-								<span class="category-icon e1"></span>
+								<span class="category-icon a4"></span>
 								<span class="category-name">创业</span>
 							</router-link>
 						</div>
@@ -36,7 +36,7 @@
 					<div class="category-group">
 						<div class="category-item lt">
 							<router-link class="category-link" to="/digest">
-								<span class="category-icon d1"></span>
+								<span class="category-icon a5"></span>
 								<span class="category-name">精选</span>
 							</router-link>
 						</div>
@@ -45,7 +45,7 @@
 					<div class="category-group">
 						<div class="category-item lt">
 							<router-link class="category-link" to="/online">
-								<span class="category-icon a2"></span>
+								<span class="category-icon b1"></span>
 								<span class="category-name">在线旅游</span>
 							</router-link>
 						</div>
@@ -59,13 +59,13 @@
 					<div class="category-group">
 						<div class="category-item lt">
 							<router-link class="category-link" to="/airline">
-								<span class="category-icon c2"></span>
+								<span class="category-icon b3"></span>
 								<span class="category-name">航空公司</span>
 							</router-link>
 						</div>
 						<div class="category-item lt newline">
 							<router-link class="category-link" to="/destination">
-								<span class="category-icon d2"></span>
+								<span class="category-icon b4"></span>
 								<span class="category-name">出入境及目的地</span>
 							</router-link>
 						</div>
@@ -73,13 +73,13 @@
 					<div class="category-group">
 						<div class="category-item lt">
 							<router-link class="category-link" to="/investment">
-								<span class="category-icon e2"></span>
+								<span class="category-icon b5"></span>
 								<span class="category-name">投资并购</span>
 							</router-link>
 						</div>
 						<div class="category-item lt newline">
 							<router-link class="category-link" to="/distributor">
-								<span class="category-icon f2"></span>
+								<span class="category-icon b6"></span>
 								<span class="category-name">旅游分销商</span>
 							</router-link>
 						</div>
@@ -87,13 +87,13 @@
 					<div class="category-group">
 						<div class="category-item lt">
 							<router-link class="category-link" to="/tech">
-								<span class="category-icon g2"></span>
+								<span class="category-icon b7"></span>
 								<span class="category-name">旅游科技</span>
 							</router-link>
 						</div>
 						<div class="category-item lt newline">
 							<router-link class="category-link" to="/system">
-								<span class="category-icon h2"></span>
+								<span class="category-icon b8"></span>
 								<span class="category-name">旅游分销系统</span>
 							</router-link>
 						</div>
@@ -101,13 +101,13 @@
 					<div class="category-group">
 						<div class="category-item lt">
 							<router-link class="category-link" to="/cruise">
-								<span class="category-icon i2"></span>
+								<span class="category-icon b9"></span>
 								<span class="category-name">邮轮</span>
 							</router-link>
 						</div>
 						<div class="category-item lt newline">
 							<router-link class="category-link" to="/mice">
-								<span class="category-icon j2"></span>
+								<span class="category-icon b10"></span>
 								<span class="category-name">商务及奖励旅游</span>
 							</router-link>
 						</div>
@@ -115,13 +115,13 @@
 					<div class="category-group">
 						<div class="category-item lt">
 							<router-link class="category-link" to="/carrent">
-								<span class="category-icon k2"></span>
+								<span class="category-icon b11"></span>
 								<span class="category-name">租车</span>
 							</router-link>
 						</div>
 						<div class="category-item lt newline">
 							<router-link class="category-link" to="/airport">
-								<span class="category-icon l2"></span>
+								<span class="category-icon b12"></span>
 								<span class="category-name">机场</span>
 							</router-link>
 						</div>
@@ -129,13 +129,13 @@
 					<div class="category-group">
 						<div class="category-item lt">
 							<router-link class="category-link" to="/railway">
-								<span class="category-icon m2"></span>
+								<span class="category-icon b13"></span>
 								<span class="category-name">高铁</span>
 							</router-link>
 						</div>
 						<div class="category-item lt newline">
 							<router-link class="category-link" to="/company">
-								<span class="category-icon n2"></span>
+								<span class="category-icon b14"></span>
 								<span class="category-name">企业新闻</span>
 							</router-link>
 						</div>
@@ -174,13 +174,13 @@ export default {
 							link: "http://event.traveldaily.cn/",
 							icon: "./assets/icons/icon-3a.png",
 							text: "查看全年活动",
-							className: "a3"
+							className: "c1"
 						},
 						{
 							link: "http://event.traveldaily.cn/packaged/",
 							icon: "./assets/icons/icon-3b.png",
 							text: "购买活动联票",
-							className: "b3"
+							className: "c2"
 						}
 					]
 				},
@@ -191,13 +191,13 @@ export default {
 							link: "http://www.traveldaily.cn/marketing/hr",
 							icon: "./assets/icons/icon-4a.png",
 							text: "免费发布招聘信息",
-							className: "a4"
+							className: "d1"
 						},
 						{
 							link: "/job",
 							icon: "./assets/icons/icon-4b.png",
 							text: "查看最新工作机会",
-							className: "b4"
+							className: "d2"
 						}
 					]
 				},
@@ -208,13 +208,13 @@ export default {
 							link: "http://www.traveldaily.cn/marketing/service",
 							icon: "./assets/icons/icon-5a.png",
 							text: "精准营销服务",
-							className: "a5"
+							className: "e1"
 						},
 						{
 							link: "http://www.traveldaily.cn/marketing/workshop",
 							icon: "./assets/icons/icon-5b.png",
 							text: "举办在线讲堂",
-							className: "b5"
+							className: "e2"
 						}
 					]
 				},
@@ -225,13 +225,13 @@ export default {
 							link: "http://www.chinatravelnews.com/china/?_gscu_=06439806uzkodc66&_gscs_=t06608580pltjny59",
 							icon: "./assets/icons/icon-6a.png",
 							text: "China",
-							className: "a6"
+							className: "f1"
 						},
 						{
 							link: "http://www.chinatravelnews.com/international/?_gscu_=06439806uzkodc66&_gscs_=t06608580pltjny59",
 							icon: "./assets/icons/icon-6b.png",
 							text: "International",
-							className: "b6"
+							className: "f2"
 						}
 					]
 				}
@@ -314,9 +314,61 @@ export default {
 		font-size: 17px;
 		line-height: 35px;
 	}
-	.generate-background(@n, @i: 1) when (@i <= @n) {
-
+	.generate-background-a(@n) when (@n <= 5) {
+		.a@{n} {
+			background-image: url('../assets/icons/icon-a@{n}.png');
+		}
+		.generate-background-a((@n + 1))
 	}
+	.generate-background-b(@n) when (@n <= 14) {
+		.b@{n} {
+			background-image: url('../assets/icons/icon-b@{n}.png');
+		}
+		.generate-background-b((@n + 1))
+	}
+	.generate-background-c(@n) when (@n <= 2) {
+		.c@{n} {
+			background-image: url('../assets/icons/icon-c@{n}.png');
+		}
+		.generate-background-c((@n + 1))
+	}
+	.generate-background-d(@n) when (@n <= 2) {
+		.d@{n} {
+			background-image: url('../assets/icons/icon-d@{n}.png');
+		}
+		.generate-background-d((@n + 1))
+	}
+	.generate-background-e(@n) when (@n <= 2) {
+		.e@{n} {
+			background-image: url('../assets/icons/icon-e@{n}.png');
+		}
+		.generate-background-e((@n + 1))
+	}
+	.generate-background-f(@n) when (@n <= 2) {
+		.f@{n} {
+			background-image: url('../assets/icons/icon-f@{n}.png');
+		}
+		.generate-background-f((@n + 1))
+	}
+	.category-item {
+		.generate-background-a(1);
+	}
+	.category-item {
+		.generate-background-b(1);
+	}
+	.category-item {
+		.generate-background-c(1);
+	}
+	.category-item {
+		.generate-background-d(1);
+	}
+	.category-item {
+		.generate-background-e(1);
+	}
+	.category-item {
+		.generate-background-f(1);
+	}
+
 	@media screen and (max-width: 320px) {
 		.newline {
 			float: none;
