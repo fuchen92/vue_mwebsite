@@ -2,7 +2,7 @@
 	<div class="siderbar siderbar-search" :class="{ 'siderbar-search-active' : isShowSearch }">
 		<div class="container">
 			<div class="search-bar">
-                <div class="search-arrow lt"></div>
+                <div class="search-arrow lt" @click="hideSearch"></div>
                 <div class="search-btn rt">搜索</div>
                 <div class="search-input-container">
                     <input type="text" class="search-input" id="searchInput" placeholder="请输入关键字">
@@ -19,6 +19,11 @@ export default {
 		isShowSearch: {
 			required: true,
 			type: Boolean
+		}
+	},
+	methods: {
+		hideSearch () {
+			this.$emit("hideSearch");
 		}
 	}
 }

@@ -6,7 +6,7 @@
 				<div class="hamburger-item hamburger-middle"></div>
 				<div class="hamburger-item hamburger-bottom"></div>
 			</div>
-			<div class="header-search rt"></div>
+			<div class="header-search rt" @click="showSearch"></div>
 			<h3 class="site-name">
 				<router-link to="/">
 					<img class="site-logo" src="../assets/site-logo.png">
@@ -20,8 +20,11 @@
 export default {
 	name: "appHeader",
 	methods: {
-		showCategory: function () {
+		showCategory () {
 			this.$emit("showCategory");
+		},
+		showSearch () {
+			this.$emit("showSearch");
 		}
 	}
 }

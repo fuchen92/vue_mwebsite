@@ -1,10 +1,10 @@
 <template>
 	<div id="app">
 		<div class="wrapper">
-			<app-header @showCategory="showCategory"></app-header>
+			<app-header @showCategory="showCategory" @showSearch="showSearch"></app-header>
 			<app-menu :menuList="menuList"></app-menu>
 			<siderbar-category :isShowCategory="isShowCategory" @hideCategory="hideCategory"></siderbar-category>
-			<siderbar-search :isShowSearch="isShowSearch"></siderbar-search>
+			<siderbar-search :isShowSearch="isShowSearch" @hideSearch="hideSearch"></siderbar-search>
 			<!-- <router-view></router-view> -->
 		</div>
 	</div>
@@ -47,7 +47,7 @@ export default {
 				{ link: "/digest", text: "精选" }
 			],
 			isShowCategory: false,
-			isShowSearch: true
+			isShowSearch: false
 		}
 	},
 	methods: {
@@ -56,6 +56,12 @@ export default {
 		},
 		hideCategory () {
 			this.isShowCategory = false;
+		},
+		showSearch () {
+			this.isShowSearch = true;
+		},
+		hideSearch () {
+			this.isShowSearch = false;
 		}
 	}
 }
