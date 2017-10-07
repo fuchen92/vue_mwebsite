@@ -21,33 +21,19 @@ export default {
 			type: Array
 		}
 	},
-	data () {
-		return {
-			urlPath: "",
-		}
-	},
 	watch: {
 		"$route": function (to, from) {
-			this.urlPath = to.path;
-			console.log(this.urlPath)
-			// setTimeout(() => {
-				console.log(document.getElementsByClassName("menu-active")[0].parentElement)
+			setTimeout(() => {
 				this.scrollMenu();
-			// }, 500)
+			}, 1)
 		}
 	},
 	created () {
-		this.urlPath = this.$route.path;
-		console.log(this.urlPath)
 		console.log("创建了")
 	},
 	mounted () {
 		this.scrollMenu();
 		console.log("挂载了")
-	},
-
-	updated () {
-		console.log("更新了")
 	},
 	methods: {
 		scrollMenu () {
@@ -58,7 +44,6 @@ export default {
 
 			var slideLeft = eleLeft - (menuContainerWidth / 2) + (targetEle.offsetWidth / 2);
 			menuContainer.scrollLeft = slideLeft;
-			// menuContainer.style.marginLeft = -slideLeft + "px"
 		}
 	}
 }
@@ -102,6 +87,7 @@ export default {
 		color: @menu-color;
 	}
 	.menu-active {
+		color: @basic-color;
 		border-bottom: 2px solid @basic-color;
 	}
 </style>
