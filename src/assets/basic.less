@@ -21,6 +21,15 @@ img {
 ul, ol, li {
     list-style: none;
 }
+input {
+	box-sizing: border-box;
+	outline: none;
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	appearance: none;
+	font-family: "微软雅黑", Arial, "Microsoft Yahei";
+	font-size: 14px;
+}
 .container {
     width: 90%;
     height: 100%;
@@ -32,4 +41,16 @@ ul, ol, li {
 }
 .rt {
     float: right;
+}
+.siderbar {
+	position: fixed;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	background-color: #006395;
+	z-index: 20;
+	> .container {
+		overflow-y: scroll;
+		-webkit-overflow-scrolling: touch;
+	}
 }

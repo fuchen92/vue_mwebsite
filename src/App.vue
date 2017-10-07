@@ -3,7 +3,8 @@
 		<div class="wrapper">
 			<app-header @showCategory="showCategory"></app-header>
 			<app-menu :menuList="menuList"></app-menu>
-			<sider-bar :isShowCategory="isShowCategory" @hideCategory="hideCategory"></sider-bar>
+			<siderbar-category :isShowCategory="isShowCategory" @hideCategory="hideCategory"></siderbar-category>
+			<siderbar-search :isShowSearch="isShowSearch"></siderbar-search>
 			<!-- <router-view></router-view> -->
 		</div>
 	</div>
@@ -12,13 +13,15 @@
 <script>
 import appHeader from "@/components/app-header.vue";
 import appMenu from "@/components/app-menu.vue";
-import siderBar from "@/components/siderbar.vue";
+import siderbarCategory from "@/components/siderbar-category.vue";
+import siderbarSearch from "@/components/siderbar-search.vue";
 export default {
 	name: 'app',
 	components: {
 		"app-header": appHeader,
 		"app-menu": appMenu,
-		"sider-bar": siderBar
+		"siderbar-category": siderbarCategory,
+		"siderbar-search": siderbarSearch
 	},
 	data () {
 		return {
@@ -43,7 +46,8 @@ export default {
 				{ link: "/lab", text: "创业" },
 				{ link: "/digest", text: "精选" }
 			],
-			isShowCategory: false
+			isShowCategory: false,
+			isShowSearch: true
 		}
 	},
 	methods: {

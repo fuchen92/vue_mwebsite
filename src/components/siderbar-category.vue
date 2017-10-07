@@ -1,5 +1,5 @@
 <template>
-	<div class="siderbar" :class="{ 'siderbar-category-active': isShowCategory }">
+	<div class="siderbar siderbar-category" :class="{ 'siderbar-category-active': isShowCategory }">
 		<div class="container">
 			<div class="close-siderbar" @click="closeCategory">×</div>
 			<div class="category-list-container">
@@ -163,7 +163,7 @@
 
 <script>
 export default {
-	name: "siderbar",
+	name: "siderbar-category",
 	props: {
 		isShowCategory: {
 			required: true,
@@ -252,20 +252,10 @@ export default {
 }
 </script>
 
-<style lang="less" scoped>
+<style lang="less">
 	@import "../assets/variable.less";
-	.siderbar {
-		position: fixed;
-		top: 0;
+	.siderbar-category {
 		left: -100%;
-		width: 100%;
-		height: 100%;
-		background-color: @basic-color;
-		z-index: 20;
-		> .container {
-			overflow-y: scroll;
-			-webkit-overflow-scrolling: touch;
-		}
 	}
 	.siderbar-category-active {
 		left: 0;
