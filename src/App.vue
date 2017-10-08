@@ -5,6 +5,7 @@
 			<app-menu :menuList="menuList"></app-menu>
 			<siderbar-category :isShowCategory="isShowCategory" @hideCategory="hideCategory"></siderbar-category>
 			<siderbar-search :isShowSearch="isShowSearch" @hideSearch="hideSearch"></siderbar-search>
+			<banner></banner>
 			<!-- <router-view></router-view> -->
 		</div>
 	</div>
@@ -15,13 +16,15 @@ import appHeader from "@/components/app-header.vue";
 import appMenu from "@/components/app-menu.vue";
 import siderbarCategory from "@/components/siderbar-category.vue";
 import siderbarSearch from "@/components/siderbar-search.vue";
+import banner from "@/components/banner.vue";
 export default {
 	name: 'app',
 	components: {
 		"app-header": appHeader,
 		"app-menu": appMenu,
 		"siderbar-category": siderbarCategory,
-		"siderbar-search": siderbarSearch
+		"siderbar-search": siderbarSearch,
+		"banner": banner
 	},
 	data () {
 		return {
