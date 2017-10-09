@@ -2,42 +2,6 @@
 	<div class="banner">
 		<div class="container">
 			<div class="banner-items">
-				<!-- <div class="banner-item">
-					<a href="">
-						<img src="../assets/banner1.jpg">
-					</a>
-					<div class="banner-item-info">
-						<p class="banner-item-title">
-							<a href="">
-								游客需求裂变，海外目的地营销如何创新？
-							</a>
-						</p>
-					</div>
-				</div>
-				<div class="banner-item">
-					<a href="">
-						<img src="../assets/banner2.jpg">
-					</a>
-					<div class="banner-item-info">
-						<p class="banner-item-title">
-							<a href="">
-								Airbnb讲了一个好故事　那爱彼迎呢？
-							</a>
-						</p>
-					</div>
-				</div>
-				<div class="banner-item">
-					<a href="">
-						<img src="../assets/banner3.jpg">
-					</a>
-					<div class="banner-item-info">
-						<p class="banner-item-title">
-							<a href="">
-								电视广告在当今的旅游营销中如何发挥作用？
-							</a>
-						</p>
-					</div>
-				</div> -->
 				<div class="banner-item" v-for="banner in bannerList" :key="banner.title">
 					<a :href="banner.link">
 						<img :src="banner.img">
@@ -72,11 +36,6 @@ export default {
 				{
 					img: require("../assets/banner3.jpg"),
 					title: "电视广告在当今的旅游营销中如何发挥作用？",
-					link: ""
-				},
-				{
-					img: require("../assets/banner4.jpg"),
-					title: "李少华：飞猪没有边界，但有取舍",
 					link: ""
 				}
 			]
