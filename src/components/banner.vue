@@ -2,7 +2,7 @@
 	<div class="banner">
 		<div class="container">
 			<div class="banner-items">
-				<div class="banner-item">
+				<!-- <div class="banner-item">
 					<a href="">
 						<img src="../assets/banner1.jpg">
 					</a>
@@ -37,6 +37,16 @@
 							</a>
 						</p>
 					</div>
+				</div> -->
+				<div class="banner-item" v-for="banner in bannerList" :key="banner.text">
+					<a :href="banner.link">
+						<img :src="banner.img">
+					</a>
+					<div class="banner-item-info">
+						<p class="banner-item-title">
+							<a :href="banner.link">{{ banner.title }}</a>
+						</p>
+					</div>
 				</div>
 			</div>
 		</div>
@@ -45,7 +55,33 @@
 
 <script>
 export default {
-	name: "banner"
+	name: "banner",
+	data () {
+		return {
+			bannerList: [
+				{
+					img: require("../assets/banner1.jpg"),
+					title: "游客需求裂变，海外目的地营销如何创新？",
+					link: ""
+				},
+				{
+					img: require("../assets/banner2.jpg"),
+					title: "Airbnb讲了一个好故事　那爱彼迎呢？",
+					link: ""
+				},
+				{
+					img: require("../assets/banner3.jpg"),
+					title: "电视广告在当今的旅游营销中如何发挥作用？",
+					link: ""
+				},
+				{
+					img: require("../assets/banner4.jpg"),
+					title: "李少华：飞猪没有边界，但有取舍",
+					link: ""
+				}
+			]
+		}
+	}
 }
 </script>
 
