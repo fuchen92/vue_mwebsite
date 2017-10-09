@@ -5,8 +5,6 @@
 			<app-menu :menuList="menuList"></app-menu>
 			<siderbar-category :isShowCategory="isShowCategory" @hideCategory="hideCategory"></siderbar-category>
 			<siderbar-search :isShowSearch="isShowSearch" @hideSearch="hideSearch"></siderbar-search>
-			<!-- <banner></banner> -->
-			<slider></slider>
 			<router-view></router-view>
 		</div>
 	</div>
@@ -17,17 +15,13 @@ import appHeader from "@/components/app-header.vue";
 import appMenu from "@/components/app-menu.vue";
 import siderbarCategory from "@/components/siderbar-category.vue";
 import siderbarSearch from "@/components/siderbar-search.vue";
-// import banner from "@/components/banner.vue";
-import slider from "@/components/slider.vue";
 export default {
 	name: 'app',
 	components: {
 		"app-header": appHeader,
 		"app-menu": appMenu,
 		"siderbar-category": siderbarCategory,
-		"siderbar-search": siderbarSearch,
-		// "banner": banner,
-		"slider": slider
+		"siderbar-search": siderbarSearch
 	},
 	data () {
 		return {
@@ -63,7 +57,7 @@ export default {
 				{ link: "/channel/7", text: "旅游科技" },
 				{ link: "/channel/8", text: "旅游分销系统" },
 				{ link: "/channel/9", text: "商务及奖励旅游" },
-				{ link: "/channel/10", text: "油轮" },
+				{ link: "/channel/10", text: "邮轮" },
 				{ link: "/channel/11", text: "租车" },
 				{ link: "/channel/12", text: "机场" },
 				{ link: "/channel/13", text: "高铁" },
@@ -71,7 +65,8 @@ export default {
 				{ link: "/channel/15", text: "评论" },
 				{ link: "/channel/16", text: "译讯" },
 				{ link: "/channel/17", text: "创业" },
-				{ link: "/channel/18", text: "精选" }
+				{ link: "/channel/18", text: "精选" },
+				{ link: "/channel/19", text: "企业新闻" }
 			],
 			isShowCategory: false,
 			isShowSearch: false

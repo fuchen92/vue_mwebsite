@@ -134,7 +134,7 @@
 							</a>
 						</div>
 						<div class="category-item lt newline">
-							<a class="category-link" href="#/channel/14" @click="closeCategory">
+							<a class="category-link" href="#/channel/19" @click="closeCategory">
 								<span class="category-icon b14"></span>
 								<span class="category-name">企业新闻</span>
 							</a>

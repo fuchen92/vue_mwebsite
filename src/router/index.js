@@ -11,10 +11,10 @@ export default new Router({
 		{
 			path: '/',
 			component: listDefault
+		},
+		{
+			path: "/channel/:id",
+			component: Channel
 		}
-		// {
-		// 	path: /\/\w+/,
-		// 	component: Channel
-		// }
 	]
 })
