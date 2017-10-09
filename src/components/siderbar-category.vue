@@ -7,13 +7,13 @@
 					<h3 class="category-title">新闻</h3>
 					<div class="category-group">
 						<div class="category-item lt">
-							<a class="category-link" href="#/recommend" @click="closeCategory">
+							<a class="category-link" href="#/channel/14" @click="closeCategory">
 								<span class="category-icon a1"></span>
 								<span class="category-name">编辑推荐</span>
 							</a>
 						</div>
 						<div class="category-item lt">
-							<a class="category-link" href="#/review" @click="closeCategory">
+							<a class="category-link" href="#/channel/15" @click="closeCategory">
 								<span class="category-icon a2"></span>
 								<span class="category-name">评论</span>
 							</a>
@@ -21,13 +21,13 @@
 					</div>
 					<div class="category-group">
 						<div class="category-item lt">
-							<a class="category-link" href="#/translate" @click="closeCategory">
+							<a class="category-link" href="#/channel/16" @click="closeCategory">
 								<span class="category-icon a3"></span>
 								<span class="category-name">译讯</span>
 							</a>
 						</div>
 						<div class="category-item lt">
-							<a class="category-link" href="#/lab" @click="closeCategory">
+							<a class="category-link" href="#/channel/17" @click="closeCategory">
 								<span class="category-icon a4"></span>
 								<span class="category-name">创业</span>
 							</a>
@@ -35,7 +35,7 @@
 					</div>
 					<div class="category-group">
 						<div class="category-item lt">
-							<a class="category-link" href="#/digest" @click="closeCategory">
+							<a class="category-link" href="#/channel/18" @click="closeCategory">
 								<span class="category-icon a5"></span>
 								<span class="category-name">精选</span>
 							</a>
@@ -44,13 +44,13 @@
 					<div class="divide"></div>
 					<div class="category-group">
 						<div class="category-item lt">
-							<a class="category-link" href="#/online" @click="closeCategory">
+							<a class="category-link" href="#/channel/1" @click="closeCategory">
 								<span class="category-icon b1"></span>
 								<span class="category-name">在线旅游</span>
 							</a>
 						</div>
 						<div class="category-item lt newline">
-							<a class="category-link" href="#/hotel" @click="closeCategory">
+							<a class="category-link" href="#/channel/2" @click="closeCategory">
 								<span class="category-icon b2"></span>
 								<span class="category-name">酒店</span>
 							</a>
@@ -58,13 +58,13 @@
 					</div>
 					<div class="category-group">
 						<div class="category-item lt">
-							<a class="category-link" href="#/airline" @click="closeCategory">
+							<a class="category-link" href="#/channel/3" @click="closeCategory">
 								<span class="category-icon b3"></span>
 								<span class="category-name">航空公司</span>
 							</a>
 						</div>
 						<div class="category-item lt newline">
-							<a class="category-link" href="#/destination" @click="closeCategory">
+							<a class="category-link" href="#/channel/4" @click="closeCategory">
 								<span class="category-icon b4"></span>
 								<span class="category-name">出入境及目的地</span>
 							</a>
@@ -72,13 +72,13 @@
 					</div>
 					<div class="category-group">
 						<div class="category-item lt">
-							<a class="category-link" href="#/investment" @click="closeCategory">
+							<a class="category-link" href="#/channel/5" @click="closeCategory">
 								<span class="category-icon b5"></span>
 								<span class="category-name">投资并购</span>
 							</a>
 						</div>
 						<div class="category-item lt newline">
-							<a class="category-link" href="#/distributor" @click="closeCategory">
+							<a class="category-link" href="#/channel/6" @click="closeCategory">
 								<span class="category-icon b6"></span>
 								<span class="category-name">旅游分销商</span>
 							</a>
@@ -86,13 +86,13 @@
 					</div>
 					<div class="category-group">
 						<div class="category-item lt">
-							<a class="category-link" href="#/tech" @click="closeCategory">
+							<a class="category-link" href="#/channel/7" @click="closeCategory">
 								<span class="category-icon b7"></span>
 								<span class="category-name">旅游科技</span>
 							</a>
 						</div>
 						<div class="category-item lt newline">
-							<a class="category-link" href="#/system" @click="closeCategory">
+							<a class="category-link" href="#/channel/8" @click="closeCategory">
 								<span class="category-icon b8"></span>
 								<span class="category-name">旅游分销系统</span>
 							</a>
@@ -100,13 +100,13 @@
 					</div>
 					<div class="category-group">
 						<div class="category-item lt">
-							<a class="category-link" href="#/cruise" @click="closeCategory">
+							<a class="category-link" href="#/channel/10" @click="closeCategory">
 								<span class="category-icon b9"></span>
 								<span class="category-name">邮轮</span>
 							</a>
 						</div>
 						<div class="category-item lt newline">
-							<a class="category-link" href="#/mice" @click="closeCategory">
+							<a class="category-link" href="#/channel/9" @click="closeCategory">
 								<span class="category-icon b10"></span>
 								<span class="category-name">商务及奖励旅游</span>
 							</a>
@@ -114,13 +114,13 @@
 					</div>
 					<div class="category-group">
 						<div class="category-item lt">
-							<a class="category-link" href="#/carrent" @click="closeCategory">
+							<a class="category-link" href="#/channel/11" @click="closeCategory">
 								<span class="category-icon b11"></span>
 								<span class="category-name">租车</span>
 							</a>
 						</div>
 						<div class="category-item lt newline">
-							<a class="category-link" href="#/airport" @click="closeCategory">
+							<a class="category-link" href="#/channel/12" @click="closeCategory">
 								<span class="category-icon b12"></span>
 								<span class="category-name">机场</span>
 							</a>
@@ -128,13 +128,13 @@
 					</div>
 					<div class="category-group">
 						<div class="category-item lt">
-							<a class="category-link" href="#/railway" @click="closeCategory">
+							<a class="category-link" href="#/channel/13" @click="closeCategory">
 								<span class="category-icon b13"></span>
 								<span class="category-name">高铁</span>
 							</a>
 						</div>
 						<div class="category-item lt newline">
-							<a class="category-link" href="#/company" @click="closeCategory">
+							<a class="category-link" href="#/channel/14" @click="closeCategory">
 								<span class="category-icon b14"></span>
 								<span class="category-name">企业新闻</span>
 							</a>
