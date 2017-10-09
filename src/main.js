@@ -3,6 +3,8 @@
 import Vue from 'vue'
 import App from './App'
 import router from './router'
+import Swiper from 'swiper'
+window.Swiper = Swiper
 
 Vue.config.productionTip = false
 

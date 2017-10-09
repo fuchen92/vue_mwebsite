@@ -81,5 +81,6 @@ export default {
 }
 .wrapper {
 	margin-top: 100px;
+	overflow: hidden;
 }
 </style>
