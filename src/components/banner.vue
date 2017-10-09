@@ -38,7 +38,7 @@
 						</p>
 					</div>
 				</div> -->
-				<div class="banner-item" v-for="banner in bannerList" :key="banner.text">
+				<div class="banner-item" v-for="banner in bannerList" :key="banner.title">
 					<a :href="banner.link">
 						<img :src="banner.img">
 					</a>
