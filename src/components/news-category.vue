@@ -1,13 +1,11 @@
 <template>
 	<div class="news-list-category">
-		<div class="container">
-			<h3 class="news-category-title lt">
-				<a :href="newsCategory.link">{{ newsCategory.type }}</a>
-			</h3>
-			<p class="more-news rt" v-if="newsCategory.moretext">
-				<a :href="newsCategory.link">{{ newsCategory.moretext }}</a>
-			</p>
-		</div>
+		<h3 class="news-category-title lt">
+			<a :href="newsCategory.link">{{ newsCategory.type }}</a>
+		</h3>
+		<p class="more-news rt" v-if="newsCategory.moretext">
+			<a :href="newsCategory.link">{{ newsCategory.moretext }}</a>
+		</p>
 	</div>
 </template>
 
@@ -20,6 +18,7 @@ export default {
 
 <style lang="less">
 .news-list-category {
+	overflow: hidden;
 	margin-bottom: 15px;
 }
 .news-category-title > a, .more-news > a {

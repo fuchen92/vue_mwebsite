@@ -1,8 +1,10 @@
 <template>
 	<div class="main">
 		<!-- <slider></slider> -->
-		<banner></banner>
-		<news-category :newsCategory="newsCategory"></news-category>
+		<div class="container">
+			<banner></banner>
+			<news-category :newsCategory="newsCategory"></news-category>
+		</div>
 	</div>
 </template>
 

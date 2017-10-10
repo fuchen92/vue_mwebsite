@@ -1,16 +1,14 @@
 <template>
 	<div class="banner">
-		<div class="container">
-			<div class="banner-items">
-				<div class="banner-item" v-for="banner in bannerList" :key="banner.title">
-					<a :href="banner.link">
-						<img :src="banner.img">
-					</a>
-					<div class="banner-item-info">
-						<p class="banner-item-title">
-							<a :href="banner.link">{{ banner.title }}</a>
-						</p>
-					</div>
+		<div class="banner-items">
+			<div class="banner-item" v-for="banner in bannerList" :key="banner.title">
+				<a :href="banner.link">
+					<img :src="banner.img">
+				</a>
+				<div class="banner-item-info">
+					<p class="banner-item-title">
+						<a :href="banner.link">{{ banner.title }}</a>
+					</p>
 				</div>
 			</div>
 		</div>
