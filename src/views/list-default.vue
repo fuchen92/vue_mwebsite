@@ -4,7 +4,7 @@
 		<div class="container">
 			<banner></banner>
 			<news-category :newsCategory="newsCategory"></news-category>
-			<carousel-one :carouselList="carouselList"></carousel-one>
+			<carousel-one class="carousel-one" :carouselList="carouselList"></carousel-one>
 		</div>
 	</div>
 </template>

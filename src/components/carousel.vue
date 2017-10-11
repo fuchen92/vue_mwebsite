@@ -1,5 +1,5 @@
 <template>
-	<div class="carousel carousel-one swiper-container">
+	<div class="carousel swiper-container">
 		<ul class="swiper-wrapper">
 			<li class="carousel-item swiper-slide" v-for="carousel in carouselList" :key="carousel.title">
 				<div class="news-img-container">
