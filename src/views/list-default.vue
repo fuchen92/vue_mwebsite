@@ -43,7 +43,7 @@ export default {
 					time: "2017-10-10"
 				},
 				{
-					img: require("../assets/carousel-2.jpg"),
+					img: require("../assets/carousel-4.jpg"),
 					link: "",
 					title: "首个民宿国家行业标准生效　但短租仍处于灰色地带",
 					time: "2017-10-10"

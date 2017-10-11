@@ -23,6 +23,23 @@ export default {
 		carouselList: {
 			type: Array
 		}
+	},
+	mounted () {
+		var carousel1 = new Swiper(".carousel-one", {
+			spaceBetween: 20,
+			slidesPerView: "1.6",
+			freeMode: true
+	//      onSlideChangeEnd: function(swiper){
+	//          var currentIndex = swiper.activeIndex;
+	//          var carouselItem = $(".carousel-one .carousel-item")
+	//          // // console.log(currentIndex) //切换结束时，告诉我现在是第几个slide
+	//          if (currentIndex >= carouselItem.length - 2 ) {
+	//              console.log("到底了")
+	//              // 到底了，加载数据添加进容器
+	//
+	//          }
+	//      }
+		});
 	}
 }
 </script>
