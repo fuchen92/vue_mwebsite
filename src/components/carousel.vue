@@ -13,6 +13,7 @@
 				<p class="news-img-intro" v-if="carousel.time">{{ carousel.time }}</p>
 			</li>
 		</ul>
+		<slot name="advertise"></slot>
 	</div>
 </template>
 

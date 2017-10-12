@@ -10,7 +10,8 @@
 
 <script>
 export default {
-	name: "advertise"
+	name: "advertise",
+	props: ["advertise"]
 }
 </script>
 
@@ -19,6 +20,9 @@ export default {
 	position: relative;
 	font-size: 0;
 	margin: 20px auto 0;
+	img {
+		max-width: 100%;
+	}
 }
 </style>
 

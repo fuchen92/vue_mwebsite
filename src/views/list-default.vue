@@ -4,7 +4,9 @@
 		<div class="container">
 			<banner></banner>
 			<news-category :newsCategory="newsCategory"></news-category>
-			<carousel-one class="carousel-one" :carouselList="carouselList"></carousel-one>
+			<carousel-one class="carousel-one" :carouselList="carouselList">
+				<advertise :advertise="advertise" slot="advertise"></advertise>
+			</carousel-one>
 		</div>
 	</div>
 </template>
@@ -14,6 +16,7 @@ import banner from "@/components/banner.vue";
 // import slider from "@/components/slider.vue";
 import newsCategory from "@/components/news-category.vue";
 import carouselOne from "@/components/carousel.vue";
+import advertise from "@/components/advertise.vue";
 export default {
 	name: "list-default",
 	data () {
@@ -48,14 +51,20 @@ export default {
 					title: "首个民宿国家行业标准生效　但短租仍处于灰色地带",
 					time: "2017-10-10"
 				}
-			]
+			],
+			advertise: {
+				id: "xcode81",
+				link: "http://event.traveldaily.cn/adc2017/",
+				img: require("../assets/advertise-1.jpg")
+			}
 		}
 	},
 	components: {
 		// "slider": slider
 		"banner": banner,
 		"news-category": newsCategory,
-		"carousel-one": carouselOne
+		"carousel-one": carouselOne,
+		"advertise": advertise
 	}
 }
 </script>
