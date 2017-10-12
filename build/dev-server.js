@@ -1,4 +1,6 @@
 require('./check-versions')()
+// 添加 mock 数据配置
+var mockRouterNews = require('../mock/router-news')
 
 var config = require('../config')
 if (!process.env.NODE_ENV) {
@@ -48,6 +50,9 @@ Object.keys(proxyTable).forEach(function (context) {
   }
   app.use(proxyMiddleware(options.filter || context, options))
 })
+
+// 添加 mock 数据配置
+app.use('/mock/news', mockRouterNews)
 
 // handle fallback for HTML5 history API
 app.use(require('connect-history-api-fallback')())

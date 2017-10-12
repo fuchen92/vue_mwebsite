@@ -7,11 +7,23 @@
 			<carousel-one class="carousel-one" :carouselList="carouselList">
 				<advertise :advertise="advertise" slot="advertise"></advertise>
 			</carousel-one>
+			<!-- <div class="news-item-container">
+				<news-category :newsCategory="newsCategoryTwo"></news-category>
+				<div class="news-item" v-for="(news, index) in newsList" :key="news.title">
+					<h4 class="news-title">
+						<a :href="news.link">{{ news.title }}</a>
+					</h4>
+					<div class="time">{{ news.time }}</div>
+					<p class="news-intro">{{ news.intro }}</p>
+				</div>
+			</div> -->
 		</div>
 	</div>
 </template>
 
 <script>
+import axios from 'axios'
+
 import banner from "@/components/banner.vue";
 // import slider from "@/components/slider.vue";
 import newsCategory from "@/components/news-category.vue";
@@ -25,6 +37,10 @@ export default {
 				link: "",
 				type: "编辑推荐",
 				moretext: "更多>>"
+			},
+			newsCategoryTwo: {
+				link: "",
+				type: "最新资讯"
 			},
 			carouselList: [
 				{
@@ -65,6 +81,18 @@ export default {
 		"news-category": newsCategory,
 		"carousel-one": carouselOne,
 		"advertise": advertise
+	},
+	methods: {
+		getNews () {
+			axios.get("/news").then(res => {
+				console.log(res)
+			})
+		}
+	},
+	mounted () {
+		axios.get("/news").then(res => {
+			console.log(res)
+		})
 	}
 }
 </script>
@@ -72,6 +100,9 @@ export default {
 <style lang="less">
 .main {
 	overflow: hidden;
+}
+.news-item-container {
+	margin-top: 20px;
 }
 </style>
 

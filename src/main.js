@@ -6,6 +6,9 @@ import router from './router'
 import Swiper from 'swiper'
 window.Swiper = Swiper
 
+import axios from 'axios'
+Vue.prototype.$http = axios
+
 Vue.config.productionTip = false
 
 /* eslint-disable no-new */
