@@ -7,6 +7,7 @@
 			<siderbar-search :isShowSearch="isShowSearch" @hideSearch="hideSearch"></siderbar-search>
 			<router-view></router-view>
 			<subscribe></subscribe>
+			<app-footer></app-footer>
 		</div>
 	</div>
 </template>
@@ -17,6 +18,7 @@ import appMenu from "@/components/app-menu.vue";
 import siderbarCategory from "@/components/siderbar-category.vue";
 import siderbarSearch from "@/components/siderbar-search.vue";
 import subscribe from "@/components/subscribe.vue";
+import appFooter from "@/components/app-footer.vue";
 export default {
 	name: 'app',
 	components: {
@@ -24,7 +26,8 @@ export default {
 		"app-menu": appMenu,
 		"siderbar-category": siderbarCategory,
 		"siderbar-search": siderbarSearch,
-		"subscribe": subscribe
+		"subscribe": subscribe,
+		"app-footer": appFooter
 	},
 	data () {
 		return {
