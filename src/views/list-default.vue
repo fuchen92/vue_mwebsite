@@ -90,10 +90,9 @@ export default {
 		// }
 	},
 	mounted () {
-		console.log(this)
-		this.$http.get("/mock/news/news").then(res => {
+		this.$http.get("/api/news").then(res => {
 			console.log(res)
-			// console.log(this)
+			console.log(this)
 			this.newsList = res.data
 		})
 	}
@@ -124,10 +123,7 @@ export default {
 .times {
     box-sizing: border-box;
     padding-left: 25px;
-    // background-image: url(img/time.png);
-    // background-repeat: no-repeat;
-	// background-position: left center;
-	color: #999999;
+	color: @newstime-color;
 	background: url(../assets/time.png) left center no-repeat;
     background-size: contain;
     font-size: 13px;
@@ -140,7 +136,7 @@ export default {
     -webkit-line-clamp: 2;
 	-webkit-box-orient: vertical;
 	font-size: 14px;
-    color: #666;
+    color: @newsintro-color;
     line-height: 25px;
 }
 </style>

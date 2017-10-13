@@ -52,7 +52,7 @@ Object.keys(proxyTable).forEach(function (context) {
 })
 
 // 添加 mock 数据配置
-app.use('/mock/news', mockRouterNews)
+app.use('/api', mockRouterNews)
 
 // handle fallback for HTML5 history API
 app.use(require('connect-history-api-fallback')())
