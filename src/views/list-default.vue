@@ -9,8 +9,8 @@
 			</carousel-one>
 			<div class="news-item-container">
 				<news-category :newsCategory="newsCategoryTwo"></news-category>
-				<template v-for="(news, index) in newsList" :style="{ 'border-bottom': (index == newsList.length - 1) ? '0px' : ''  }">
-					<div class="news-item" :key="news.title">
+				<template v-for="(news, index) in newsList">
+					<div class="news-item" :key="news.title" :style="{ 'border-bottom': (index == newsList.length - 1) ? '0px' : ''  }">
 						<h4 class="news-title">
 							<a :href="news.link">{{ news.title }}</a>
 						</h4>
@@ -19,9 +19,19 @@
 					</div>
 				</template>
 				<advertise :advertise="advertise2"></advertise>
-
+				<news-category :newsCategory="newsCategoryThree"></news-category>
 				<carousel-two class="carousel-two" :carouselList="activityList"></carousel-two>
+				<template v-for="(more, idx) in moreList">
+					<div class="news-item" :key="more.title">
+						<h4 class="news-title">
+							<a :href="more.link">{{ more.title }}</a>
+						</h4>
+						<div class="times">{{ more.time }}</div>
+						<p class="news-intro">{{ more.intro }}</p>
+					</div>
+				</template>
 			</div>
+			<div class="more-news-btn" id="readmore">加载更多</div>
 		</div>
 	</div>
 </template>
@@ -84,10 +94,15 @@ export default {
 					title: "【ADC】2017 中国航空营销峰会"
 				},
 				{
+					img: require("../assets/recent-1.jpg"),
+					link: "",
+					title: "环球旅讯会议将亮相亚洲最大旅游展ITB Asia"
+				},
+				{
 					img: require("../assets/recent-6.jpg"),
 					link: "",
 					title: "【Phocuswright】2017 Phocuswright 会议"
-				},
+				}
 			],
 			advertise: {
 				id: "xcode81",
@@ -99,7 +114,8 @@ export default {
 				link: "",
 				img: ""
 			},
-			newsList: ""
+			newsList: "",
+			moreList: ""
 		}
 	},
 	components: {
@@ -119,7 +135,6 @@ export default {
 	},
 	mounted () {
 		this.$http.get("/api/news").then(res => {
-			console.log(res)
 			this.newsList = res.data
 		})
 	}
@@ -165,6 +180,22 @@ export default {
 	font-size: 14px;
     color: @newsintro-color;
     line-height: 25px;
+}
+.news-item:nth-last-child(1) {
+    border-bottom: none;
+}
+.more-news-btn {
+    height: 35px;
+    line-height: 35px;
+    color: #fff;
+    background-color: #006395;
+    text-align: center;
+    border-radius: 5px;
+    font-size: 16px;
+	margin: 20px 0 50px;
+	&:active {
+		background-color: #d1d1d1;
+	}
 }
 </style>
 
