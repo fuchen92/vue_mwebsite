@@ -7,22 +7,21 @@
 			<carousel-one class="carousel-one" :carouselList="carouselList">
 				<advertise :advertise="advertise" slot="advertise"></advertise>
 			</carousel-one>
-			<!-- <div class="news-item-container">
+			<div class="news-item-container">
 				<news-category :newsCategory="newsCategoryTwo"></news-category>
 				<div class="news-item" v-for="(news, index) in newsList" :key="news.title">
 					<h4 class="news-title">
 						<a :href="news.link">{{ news.title }}</a>
 					</h4>
-					<div class="time">{{ news.time }}</div>
+					<div class="times">{{ news.time }}</div>
 					<p class="news-intro">{{ news.intro }}</p>
 				</div>
-			</div> -->
+			</div>
 		</div>
 	</div>
 </template>
 
 <script>
-import axios from 'axios'
 
 import banner from "@/components/banner.vue";
 // import slider from "@/components/slider.vue";
@@ -72,7 +71,8 @@ export default {
 				id: "xcode81",
 				link: "http://event.traveldaily.cn/adc2017/",
 				img: require("../assets/advertise-1.jpg")
-			}
+			},
+			newsList: ""
 		}
 	},
 	components: {
@@ -83,26 +83,65 @@ export default {
 		"advertise": advertise
 	},
 	methods: {
-		getNews () {
-			axios.get("/news").then(res => {
-				console.log(res)
-			})
-		}
+		// getNews () {
+		// 	axios.get("/news").then(res => {
+		// 		console.log(res)
+		// 	})
+		// }
 	},
 	mounted () {
-		axios.get("/news").then(res => {
+		console.log(this)
+		this.$http.get("/mock/news/news").then(res => {
 			console.log(res)
+			// console.log(this)
+			this.newsList = res.data
 		})
 	}
 }
 </script>
 
 <style lang="less">
+@import "../assets/variable.less";
 .main {
 	overflow: hidden;
 }
 .news-item-container {
 	margin-top: 20px;
+}
+.news-item {
+    margin-top: 25px;
+    padding-bottom: 25px;
+    border-bottom: 1px solid #E4E4E4;
+}
+.news-title {
+    font-weight: bold;
+    margin-bottom: 10px;
+	font-size: 16px;
+	> a {
+    	color: @post-title-color;
+	}
+}
+.times {
+    box-sizing: border-box;
+    padding-left: 25px;
+    // background-image: url(img/time.png);
+    // background-repeat: no-repeat;
+	// background-position: left center;
+	color: #999999;
+	background: url(../assets/time.png) left center no-repeat;
+    background-size: contain;
+    font-size: 13px;
+    margin-bottom: 10px;
+}
+.news-intro {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+	-webkit-box-orient: vertical;
+	font-size: 14px;
+    color: #666;
+    line-height: 25px;
 }
 </style>
 
