@@ -10,7 +10,7 @@
 			<div class="news-item-container">
 				<news-category :newsCategory="newsCategoryTwo"></news-category>
 				<template v-for="(news, index) in newsList">
-					<div class="news-item" :key="news.title" :style="{ 'border-bottom': (index == newsList.length - 1) ? '0px' : ''  }">
+					<div class="news-item" :key="news.title">
 						<h4 class="news-title">
 							<a :href="news.link">{{ news.title }}</a>
 						</h4>
@@ -19,6 +19,15 @@
 					</div>
 				</template>
 				<advertise :advertise="advertise2"></advertise>
+				<template v-for="(news, index) in newsList2">
+					<div class="news-item" :key="news.title" :style="{ 'border-bottom': (index == newsList2.length - 1) ? '0px' : ''  }">
+						<h4 class="news-title">
+							<a :href="news.link">{{ news.title }}</a>
+						</h4>
+						<div class="times">{{ news.time }}</div>
+						<p class="news-intro">{{ news.intro }}</p>
+					</div>
+				</template>
 				<news-category :newsCategory="newsCategoryThree"></news-category>
 				<carousel-two class="carousel-two" :carouselList="activityList"></carousel-two>
 				<template v-for="(more, idx) in moreList">
@@ -33,6 +42,7 @@
 			</div>
 			<div class="more-news-btn" id="readmore">加载更多</div>
 		</div>
+		<subscribe></subscribe>
 	</div>
 </template>
 
@@ -43,6 +53,7 @@ import banner from "@/components/banner.vue";
 import newsCategory from "@/components/news-category.vue";
 import carousel from "@/components/carousel.vue";
 import advertise from "@/components/advertise.vue";
+import subscribe from "@/components/subscribe.vue";
 export default {
 	name: "list-default",
 	data () {
@@ -115,6 +126,7 @@ export default {
 				img: ""
 			},
 			newsList: "",
+			newsList2: "",
 			moreList: ""
 		}
 	},
@@ -124,7 +136,8 @@ export default {
 		"news-category": newsCategory,
 		"carousel-one": carousel,
 		"advertise": advertise,
-		"carousel-two": carousel
+		"carousel-two": carousel,
+		"subscribe": subscribe
 	},
 	methods: {
 		// getNews () {
@@ -135,7 +148,12 @@ export default {
 	},
 	mounted () {
 		this.$http.get("/api/news").then(res => {
-			this.newsList = res.data
+			this.newsList = res.data;
+			console.log(this.newsList)
+		});
+		this.$http.get("/api/news2").then(res => {
+			this.newsList2 = res.data;
+			console.log(this.newsList2)
 		})
 	}
 }
