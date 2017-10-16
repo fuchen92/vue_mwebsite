@@ -29,11 +29,11 @@ export default {
 		}
 	},
 	created () {
-		console.log("创建了")
+		// console.log("创建了")
 	},
 	mounted () {
 		this.scrollMenu();
-		console.log("挂载了")
+		// console.log("挂载了")
 	},
 	methods: {
 		scrollMenu () {

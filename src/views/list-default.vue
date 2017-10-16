@@ -149,11 +149,9 @@ export default {
 	mounted () {
 		this.$http.get("/api/news").then(res => {
 			this.newsList = res.data;
-			console.log(this.newsList)
 		});
 		this.$http.get("/api/news2").then(res => {
 			this.newsList2 = res.data;
-			console.log(this.newsList2)
 		})
 	}
 }
