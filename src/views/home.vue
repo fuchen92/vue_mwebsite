@@ -1,5 +1,9 @@
 <template>
 	<div class="main">
+		<app-header @showCategory="showCategory" @showSearch="showSearch"></app-header>
+		<app-menu :menuList="menuList"></app-menu>
+		<siderbar-category :isShowCategory="isShowCategory" @hideCategory="hideCategory"></siderbar-category>
+		<siderbar-search :isShowSearch="isShowSearch" @hideSearch="hideSearch"></siderbar-search>
 		<!-- <slider></slider> -->
 		<div class="container">
 			<banner></banner>
@@ -47,7 +51,10 @@
 </template>
 
 <script>
-
+import appHeader from "@/components/app-header.vue";
+import appMenu from "@/components/app-menu.vue";
+import siderbarCategory from "@/components/siderbar-category.vue";
+import siderbarSearch from "@/components/siderbar-search.vue";
 import banner from "@/components/banner.vue";
 // import slider from "@/components/slider.vue";
 import newsCategory from "@/components/news-category.vue";
@@ -58,6 +65,28 @@ export default {
 	name: "list-default",
 	data () {
 		return {
+			menuList: [
+				{ link: "/", text: "首页" },
+				{ link: "/channel/1", text: "在线旅游" },
+				{ link: "/channel/2", text: "酒店" },
+				{ link: "/channel/3", text: "航空公司" },
+				{ link: "/channel/4", text: "出入境及目的地" },
+				{ link: "/channel/5", text: "投资并购" },
+				{ link: "/channel/6", text: "旅游分销商" },
+				{ link: "/channel/7", text: "旅游科技" },
+				{ link: "/channel/8", text: "旅游分销系统" },
+				{ link: "/channel/9", text: "商务及奖励旅游" },
+				{ link: "/channel/10", text: "邮轮" },
+				{ link: "/channel/11", text: "租车" },
+				{ link: "/channel/12", text: "机场" },
+				{ link: "/channel/13", text: "高铁" },
+				{ link: "/channel/14", text: "推荐" },
+				{ link: "/channel/15", text: "评论" },
+				{ link: "/channel/16", text: "译讯" },
+				{ link: "/channel/17", text: "创业" },
+				{ link: "/channel/18", text: "精选" },
+				{ link: "/channel/19", text: "企业新闻" }
+			],
 			newsCategory: {
 				link: "",
 				type: "编辑推荐",
@@ -131,7 +160,11 @@ export default {
 		}
 	},
 	components: {
+		"app-header": appHeader,
+		"app-menu": appMenu,
 		// "slider": slider
+		"siderbar-category": siderbarCategory,
+		"siderbar-search": siderbarSearch,
 		"banner": banner,
 		"news-category": newsCategory,
 		"carousel-one": carousel,
@@ -145,6 +178,9 @@ export default {
 		// 		console.log(res)
 		// 	})
 		// }
+		showCategory () {
+			this.$emit("showCategory")
+		}
 	},
 	mounted () {
 		this.$http.get("/api/news").then(res => {
@@ -161,6 +197,7 @@ export default {
 @import "../assets/variable.less";
 .main {
 	overflow: hidden;
+	margin-top: 100px;
 }
 .news-item-container {
 	margin-top: 20px;

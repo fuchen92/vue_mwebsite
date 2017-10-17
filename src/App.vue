@@ -1,54 +1,31 @@
 <template>
 	<div id="app">
-		<div class="wrapper">
-			<app-header @showCategory="showCategory" @showSearch="showSearch"></app-header>
-			<app-menu :menuList="menuList"></app-menu>
-			<siderbar-category :isShowCategory="isShowCategory" @hideCategory="hideCategory"></siderbar-category>
-			<siderbar-search :isShowSearch="isShowSearch" @hideSearch="hideSearch"></siderbar-search>
+		<!-- <div class="wrapper"> -->
+			<!-- <app-header @showCategory="showCategory" @showSearch="showSearch"></app-header>
+			<app-menu :menuList="menuList"></app-menu> -->
+			<!-- <siderbar-category :isShowCategory="isShowCategory" @hideCategory="hideCategory"></siderbar-category>
+			<siderbar-search :isShowSearch="isShowSearch" @hideSearch="hideSearch"></siderbar-search> -->
 			<router-view></router-view>
 			<app-footer></app-footer>
-		</div>
+		<!-- </div> -->
 	</div>
 </template>
 
 <script>
-import appHeader from "@/components/app-header.vue";
-import appMenu from "@/components/app-menu.vue";
-import siderbarCategory from "@/components/siderbar-category.vue";
-import siderbarSearch from "@/components/siderbar-search.vue";
+// import appHeader from "@/components/app-header.vue";
+// import appMenu from "@/components/app-menu.vue";
+// import siderbarCategory from "@/components/siderbar-category.vue";
+// import siderbarSearch from "@/components/siderbar-search.vue";
 import appFooter from "@/components/app-footer.vue";
 export default {
 	name: 'app',
 	components: {
-		"app-header": appHeader,
-		"app-menu": appMenu,
-		"siderbar-category": siderbarCategory,
-		"siderbar-search": siderbarSearch,
+		// "siderbar-category": siderbarCategory,
+		// "siderbar-search": siderbarSearch,
 		"app-footer": appFooter
 	},
 	data () {
 		return {
-			// menuList: [
-			// 	{ link: "/", text: "首页" },
-			// 	{ link: "/online", text: "在线旅游" },
-			// 	{ link: "/hotel", text: "酒店" },
-			// 	{ link: "/airline", text: "航空公司" },
-			// 	{ link: "/destination", text: "出入境及目的地" },
-			// 	{ link: "/investment", text: "投资并购" },
-			// 	{ link: "/distributor", text: "旅游分销商" },
-			// 	{ link: "/tech", text: "旅游科技" },
-			// 	{ link: "/system", text: "旅游分销系统" },
-			// 	{ link: "/mice", text: "商务及奖励旅游" },
-			// 	{ link: "/cruise", text: "油轮" },
-			// 	{ link: "/carrent", text: "租车" },
-			// 	{ link: "/airport", text: "机场" },
-			// 	{ link: "/railway", text: "高铁" },
-			// 	{ link: "/recommend", text: "推荐" },
-			// 	{ link: "/review", text: "评论" },
-			// 	{ link: "/translate", text: "译讯" },
-			// 	{ link: "/lab", text: "创业" },
-			// 	{ link: "/digest", text: "精选" }
-			// ],
 			menuList: [
 				{ link: "/", text: "首页" },
 				{ link: "/channel/1", text: "在线旅游" },
