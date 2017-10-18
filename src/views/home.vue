@@ -40,7 +40,9 @@ export default {
 				{ link: "/channel/17", text: "创业" },
 				{ link: "/channel/18", text: "精选" },
 				{ link: "/channel/19", text: "企业新闻" }
-			]
+			],
+			isShowCategory: false,
+			isShowSearch: false
 		}
 	},
 	components: {
@@ -51,16 +53,17 @@ export default {
 	},
 	methods: {
 		showCategory () {
-			this.$emit("showCategory")
+			this.isShowCategory = true;
+		},
+		hideCategory () {
+			this.isShowCategory = false;
+		},
+		showSearch () {
+			this.isShowSearch = true;
+		},
+		hideSearch () {
+			this.isShowSearch = false;
 		}
-	},
-	mounted () {
-		this.$http.get("/api/news").then(res => {
-			this.newsList = res.data;
-		});
-		this.$http.get("/api/news2").then(res => {
-			this.newsList2 = res.data;
-		})
 	}
 }
 </script>

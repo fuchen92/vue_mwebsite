@@ -1,7 +1,5 @@
 <template>
 	<div class="channel">
-		<app-header @showCategory="showCategory" @showSearch="showSearch"></app-header>
-		<app-menu :menuList="menuList"></app-menu>
 		<div class="container">
 			<div class="channel-lists">
 				<template v-for="(channel, index) in channelList">
@@ -21,35 +19,11 @@
 </template>
 
 <script>
-import appHeader from "@/components/app-header.vue";
-import appMenu from "@/components/app-menu.vue";
 import advertise from "@/components/advertise.vue";
 export default {
 	name: "channel",
 	data () {
 		return {
-			menuList: [
-				{ link: "/", text: "首页" },
-				{ link: "/channel/1", text: "在线旅游" },
-				{ link: "/channel/2", text: "酒店" },
-				{ link: "/channel/3", text: "航空公司" },
-				{ link: "/channel/4", text: "出入境及目的地" },
-				{ link: "/channel/5", text: "投资并购" },
-				{ link: "/channel/6", text: "旅游分销商" },
-				{ link: "/channel/7", text: "旅游科技" },
-				{ link: "/channel/8", text: "旅游分销系统" },
-				{ link: "/channel/9", text: "商务及奖励旅游" },
-				{ link: "/channel/10", text: "邮轮" },
-				{ link: "/channel/11", text: "租车" },
-				{ link: "/channel/12", text: "机场" },
-				{ link: "/channel/13", text: "高铁" },
-				{ link: "/channel/14", text: "推荐" },
-				{ link: "/channel/15", text: "评论" },
-				{ link: "/channel/16", text: "译讯" },
-				{ link: "/channel/17", text: "创业" },
-				{ link: "/channel/18", text: "精选" },
-				{ link: "/channel/19", text: "企业新闻" }
-			],
 			channelList: "",
 			advertise: {
 				id: "xcode81",
@@ -59,8 +33,6 @@ export default {
 		}
 	},
 	components: {
-		"app-header": appHeader,
-		"app-menu": appMenu,
 		"advertise": advertise
 	},
 	created () {
@@ -73,9 +45,6 @@ export default {
 
 <style lang="less">
 @import "../assets/variable.less";
-.channel {
-	margin-top: 100px;
-}
 .channel-item {
     padding: 30px 0;
     border-bottom: 1px solid #E4E4E4;

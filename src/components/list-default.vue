@@ -49,10 +49,10 @@ import carousel from "@/components/carousel.vue";
 import advertise from "@/components/advertise.vue";
 
 export default {
-   name: "listDefault",
-   data () {
-	   return {
-		   newsCategory: {
+	name: "listDefault",
+	data() {
+		return {
+			newsCategory: {
 				link: "",
 				type: "编辑推荐",
 				moretext: "更多>>"
@@ -122,15 +122,23 @@ export default {
 			newsList: "",
 			newsList2: "",
 			moreList: ""
-	   }
-   },
-   components: {
+		}
+	},
+	components: {
 		"banner": banner,
 		"news-category": newsCategory,
 		"carousel-one": carousel,
 		"advertise": advertise,
 		"carousel-two": carousel
-   }
+	},
+	mounted () {
+		this.$http.get("/api/news").then(res => {
+			this.newsList = res.data;
+		});
+		this.$http.get("/api/news2").then(res => {
+			this.newsList2 = res.data;
+		})
+	}
 }
 </script>
 
@@ -139,49 +147,55 @@ export default {
 .news-item-container {
 	margin-top: 20px;
 }
+
 .news-item {
-    margin-top: 25px;
-    padding-bottom: 25px;
-    border-bottom: 1px solid #E4E4E4;
+	margin-top: 25px;
+	padding-bottom: 25px;
+	border-bottom: 1px solid #E4E4E4;
 }
+
 .news-title {
-    font-weight: bold;
-    margin-bottom: 10px;
+	font-weight: bold;
+	margin-bottom: 10px;
 	font-size: 16px;
-	> a {
-    	color: @post-title-color;
+	>a {
+		color: @post-title-color;
 	}
 }
+
 .times {
-    box-sizing: border-box;
-    padding-left: 25px;
+	box-sizing: border-box;
+	padding-left: 25px;
 	color: @newstime-color;
 	background: url(../assets/time.png) left center no-repeat;
-    background-size: contain;
-    font-size: 13px;
-    margin-bottom: 10px;
+	background-size: contain;
+	font-size: 13px;
+	margin-bottom: 10px;
 }
+
 .news-intro {
-    overflow: hidden;
-    text-overflow: ellipsis;
-    display: -webkit-box;
-    -webkit-line-clamp: 2;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	display: -webkit-box;
+	-webkit-line-clamp: 2;
 	-webkit-box-orient: vertical;
 	font-size: 14px;
-    color: @newsintro-color;
-    line-height: 25px;
+	color: @newsintro-color;
+	line-height: 25px;
 }
+
 .news-item:nth-last-child(1) {
-    border-bottom: none;
+	border-bottom: none;
 }
+
 .more-news-btn {
-    height: 35px;
-    line-height: 35px;
-    color: #fff;
-    background-color: #006395;
-    text-align: center;
-    border-radius: 5px;
-    font-size: 16px;
+	height: 35px;
+	line-height: 35px;
+	color: #fff;
+	background-color: #006395;
+	text-align: center;
+	border-radius: 5px;
+	font-size: 16px;
 	margin: 20px 0 50px;
 	&:active {
 		background-color: #d1d1d1;

@@ -22,12 +22,17 @@ export default new Router({
 						default: listDefault,
 						subscribe: subscribe
 					}
+				},
+				{
+					path: "channel/:id",
+					component: Channel
 				}
 			]
-		},
-		{
-			path: "/channel/:id",
-			component: Channel
 		}
+		// ,
+		// {
+		// 	path: "/channel/:id",
+		// 	component: Channel
+		// }
 	]
 })
