@@ -188,7 +188,7 @@ export default {
 }
 </script>
 
-<style lang="less">
+<style lang="less" scoped>
 @import "../assets/css/swiper-3.4.2.min.css";
 .banner {
     height: 200px;
