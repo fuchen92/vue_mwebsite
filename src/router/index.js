@@ -4,6 +4,7 @@ import Router from 'vue-router'
 
 import Home from "@/views/home.vue"
 import Channel from "@/views/channel.vue"
+import About from "@/views/about.vue"
 
 import listDefault from "@/components/list-default.vue"
 import subscribe from "@/components/subscribe.vue"
@@ -28,11 +29,10 @@ export default new Router({
 					component: Channel
 				}
 			]
+		},
+		{
+			path: "/about",
+			component: About
 		}
-		// ,
-		// {
-		// 	path: "/channel/:id",
-		// 	component: Channel
-		// }
 	]
 })
