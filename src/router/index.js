@@ -6,6 +6,7 @@ import Home from "@/views/home.vue"
 import Channel from "@/views/channel.vue"
 import About from "@/views/about.vue"
 import Join from "@/views/join.vue"
+import Contact from "@/views/contact.vue"
 
 import listDefault from "@/components/list-default.vue"
 import subscribe from "@/components/subscribe.vue"
@@ -38,6 +39,10 @@ export default new Router({
 		{
 			path: "/join",
 			component: Join
+		},
+		{
+			path: "/contact",
+			component: Contact
 		}
 	]
 })
