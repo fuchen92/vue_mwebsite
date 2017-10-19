@@ -135,7 +135,8 @@ export default {
 }
 .address-content {
     margin-top: 20px;
-    position: relative;
+	position: relative;
+	font-size: 14px;
     line-height: 25px;
     padding-left: 35px;
     background: url(../assets/addr.png) left top 8px no-repeat;

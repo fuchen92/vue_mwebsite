@@ -10,6 +10,7 @@ import Contact from "@/views/contact.vue"
 
 import listDefault from "@/components/list-default.vue"
 import subscribe from "@/components/subscribe.vue"
+import appFooter from "@/components/app-footer.vue";
 
 Vue.use(Router)
 
@@ -17,7 +18,10 @@ export default new Router({
 	routes: [
 		{
 			path: '/',
-			component: Home,
+			components: {
+				default: Home,
+				footer: appFooter
+			},
 			children: [
 				{
 					path: "",
@@ -34,15 +38,24 @@ export default new Router({
 		},
 		{
 			path: "/about",
-			component: About
+			components: {
+				default: About,
+				footer: appFooter
+			}
 		},
 		{
 			path: "/join",
-			component: Join
+			components: {
+				default: Join,
+				footer: appFooter
+			}
 		},
 		{
 			path: "/contact",
-			component: Contact
+			components: {
+				default: Contact,
+				footer: appFooter
+			}
 		}
 	]
 })
