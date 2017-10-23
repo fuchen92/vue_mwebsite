@@ -6,17 +6,28 @@
 			</div>
 			<div class="footer-info">
 				<div class="footer-links">
-					<a href="#/about" class="footer-link">
+					<!-- <a href="#/about" class="footer-link">
 						关于我们
 						<b></b>
-					</a>
-					<a href="#/join" class="footer-link">
+					</a> -->
+					<router-link to="/about" class="footer-link">
+						关于我们
+						<b></b>
+					</router-link>
+					<!-- <a href="#/join" class="footer-link">
 						加入我们
 						<b></b>
-					</a>
-					<a href="#/contact" class="footer-link">
+					</a> -->
+					<router-link to="/join" class="footer-link">
+						加入我们
+						<b></b>
+					</router-link>
+					<!-- <a href="#/contact" class="footer-link">
 						联系我们
-					</a>
+					</a> -->
+					<router-link to="/contact" class="footer-link">
+						联系我们
+					</router-link>
 				</div>
 				<p>©2006-2017 环球旅讯版权所有</p>
 			</div>

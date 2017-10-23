@@ -5,7 +5,8 @@
 				<template v-for="(channel, index) in channelList">
 					<div class="channel-item" :key="channel.title">
 						<h4 class="channel-title">
-							<a :href="channel.link">{{ channel.title }}</a>
+							<!-- <a :href="channel.link">{{ channel.title }}</a> -->
+							<router-link :to="channel.link">{{ channel.title }}</router-link>
 						</h4>
 						<div class="times">{{ channel.time }}</div>
 						<p class="channel-intro">{{ channel.intro }}</p>

@@ -10,7 +10,8 @@
 			<template v-for="(news, index) in newsList">
 				<div class="news-item" :key="news.title">
 					<h4 class="news-title">
-						<a :href="news.link">{{ news.title }}</a>
+						<!-- <a :href="news.link">{{ news.title }}</a> -->
+						<router-link :to="news.link">{{ news.title }}</router-link>
 					</h4>
 					<div class="times">{{ news.time }}</div>
 					<p class="news-intro">{{ news.intro }}</p>
@@ -20,7 +21,8 @@
 			<template v-for="(news, index) in newsList2">
 				<div class="news-item" :key="news.title" :style="{ 'border-bottom': (index == newsList2.length - 1) ? '0px' : ''  }">
 					<h4 class="news-title">
-						<a :href="news.link">{{ news.title }}</a>
+						<!-- <a :href="news.link">{{ news.title }}</a> -->
+						<router-link :to="news.link">{{ news.title }}</router-link>
 					</h4>
 					<div class="times">{{ news.time }}</div>
 					<p class="news-intro">{{ news.intro }}</p>
@@ -31,7 +33,8 @@
 			<template v-for="(more, idx) in moreList">
 				<div class="news-item" :key="more.title">
 					<h4 class="news-title">
-						<a :href="more.link">{{ more.title }}</a>
+						<!-- <a :href="more.link">{{ more.title }}</a> -->
+						<router-link :to="more.link">{{ more.title }}</router-link>
 					</h4>
 					<div class="times">{{ more.time }}</div>
 					<p class="news-intro">{{ more.intro }}</p>
