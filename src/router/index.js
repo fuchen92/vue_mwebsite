@@ -67,7 +67,10 @@ export default new Router({
 		},
 		{
 			path: "/article/:id",
-			component: Article
+			components: {
+				default: Article,
+				footer: appFooter
+			}
 		}
 	]
 })

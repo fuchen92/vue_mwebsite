@@ -28,14 +28,16 @@
 					<advertise class="article-advertise" :advertise="advertise"></advertise>
 				</div>
 			</div>
+			<interest :interestList="interestList"></interest>
 		</div>
-		<div class="footer-input-container"></div>
+		<!-- <div class="footer-input-container"></div> -->
 	</div>
 </template>
 
 <script>
 import commonHeader from "@/components/common-head.vue";
 import advertise from "@/components/advertise.vue";
+import interest from "@/components/interest.vue";
 export default {
 	name: "article",
 	data () {
@@ -45,12 +47,39 @@ export default {
 				id: "xcode81",
 				link: "http://event.traveldaily.cn/adc2017/",
 				img: require("../assets/advertise-1.jpg")
-			}
+			},
+			interestList: [
+				{
+					img: require("../assets/interest-1.jpg"),
+					link: "",
+					time: "2017-10-24",
+					title: "Airbnb中国区负责人上任仅4个月离职　CSO接任"
+				},
+				{
+					img: require("../assets/interest-2.jpg"),
+					link: "",
+					time: "2017-10-23",
+					title: "从竞争到抱团　资本追捧下谁能成为短租平台独角兽？"
+				},
+				{
+					img: require("../assets/interest-3.jpg"),
+					link: "",
+					time: "2017-10-17",
+					title: "旅游行业公司为何连续九年未上榜全球100强品牌？"
+				},
+				{
+					img: require("../assets/interest-4.jpg"),
+					link: "",
+					time: "2017-10-17",
+					title: "万豪Moxy时尚酒店落户曼哈顿，直指Airbnb"
+				}
+			]
 		}
 	},
 	components: {
 		"common-head": commonHeader,
-		"advertise": advertise
+		"advertise": advertise,
+		"interest": interest
 	},
 	mounted () {
 		this.$http.get("/api/article").then(res => {
@@ -63,18 +92,19 @@ export default {
 <style lang="less">
 @import "../assets/variable.less";
 .article {
-	position: relative;
+	// position: relative;
 	width: 100%;
-	height: 100%;
+	// height: 100%;
 }
 .article-head {
 	position: absolute;
 }
 .main-content {
-	position: absolute;
-	top: 50px;
-	bottom: 50px;
+	// position: absolute;
+	// top: 50px;
+	// bottom: 50px;
 	width: 100%;
+	margin-top: 50px;
 	overflow-y: scroll;
 	-webkit-overflow-scrolling: touch;
 }
