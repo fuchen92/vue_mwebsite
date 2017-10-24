@@ -99,17 +99,17 @@ export default {
 				{
 					img: require("../assets/recent-5.jpg"),
 					link: "",
-					title: "【ADC】2017 中国航空营销峰会"
+					title: "2017 人民代表大会"
 				},
 				{
 					img: require("../assets/recent-1.jpg"),
 					link: "",
-					title: "环球旅讯会议将亮相亚洲最大旅游展ITB Asia"
+					title: "2017 人民代表大会"
 				},
 				{
 					img: require("../assets/recent-6.jpg"),
 					link: "",
-					title: "【Phocuswright】2017 Phocuswright 会议"
+					title: "2017 人民代表大会"
 				}
 			],
 			advertise: {
