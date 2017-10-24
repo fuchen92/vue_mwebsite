@@ -33,6 +33,7 @@ export default {
     padding: 50px 0;
 }
 .interest-title {
+	font-size: 16px;
     margin-bottom: 30px;
     color: @post-title-color;
 }
