@@ -5,7 +5,9 @@
 		<siderbar-category :isShowCategory="isShowCategory" @hideCategory="hideCategory"></siderbar-category>
 		<siderbar-search :isShowSearch="isShowSearch" @hideSearch="hideSearch"></siderbar-search>
 
-		<router-view></router-view>
+		<keep-alive>
+			<router-view v-if="$route.meta.keepAlive"></router-view>
+		</keep-alive>
 		<router-view name="subscribe"></router-view>
 	</div>
 </template>

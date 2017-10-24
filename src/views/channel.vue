@@ -44,7 +44,7 @@ export default {
 }
 </script>
 
-<style lang="less">
+<style lang="less" scoped>
 @import "../assets/variable.less";
 .channel-item {
     padding: 30px 0;

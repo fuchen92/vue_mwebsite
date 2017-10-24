@@ -7,6 +7,7 @@ import Channel from "@/views/channel.vue"
 import About from "@/views/about.vue"
 import Join from "@/views/join.vue"
 import Contact from "@/views/contact.vue"
+import Article from "@/views/article.vue"
 
 import listDefault from "@/components/list-default.vue"
 import subscribe from "@/components/subscribe.vue"
@@ -29,11 +30,17 @@ export default new Router({
 					components: {
 						default: listDefault,
 						subscribe: subscribe
+					},
+					meta: {
+						keepAlive: true		// 需要被缓存
 					}
 				},
 				{
 					path: "channel/:id",
-					component: Channel
+					component: Channel,
+					meta: {
+						keepAlive: true		// 需要被缓存
+					}
 				}
 			]
 		},
@@ -57,6 +64,10 @@ export default new Router({
 				default: Contact,
 				footer: appFooter
 			}
+		},
+		{
+			path: "/article/:id",
+			component: Article
 		}
 	]
 })
