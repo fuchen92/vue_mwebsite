@@ -11,32 +11,32 @@
 			<div class="container">
 				<div class="provide-list">
 					<h3 class="provide-title">投稿爆料/寻求报道</h3>
-					<p class="provide-description">希望在环球旅讯分享您的真知灼见？或希望我们报道您的公司或产品？请联系</p>
+					<p class="provide-description">希望在习大大分享您的真知灼见？或希望我们报道您的公司或产品？请联系</p>
 					<p class="tel-email">（86）20 9999 9999 或 <a class="email-link" href="" target="_blank">fuchen@qq.com</a></p>
 				</div>
 				<div class="provide-list">
 					<h3 class="provide-title">投放广告/赞助活动</h3>
-					<p class="provide-description">希望借助环球旅讯提升品牌影响力，挖掘更多合作伙伴？请联系</p>
+					<p class="provide-description">希望借助习大大提升品牌影响力，挖掘更多合作伙伴？请联系</p>
 					<p class="tel-email">（86）20 9999 9999 或 <a class="email-link" href="">fuchen@qq.com</a>。</p>
 				</div>
 				<div class="provide-list">
 					<h3 class="provide-title">媒体合作</h3>
-					<p class="provide-description">希望成为环球旅讯或旗下活动的媒体合作伙伴？请联系</p>
+					<p class="provide-description">希望成为习大大或旗下活动的媒体合作伙伴？请联系</p>
 					<p class="tel-email">（86）20 9999 9999 或 <a class="email-link" href="">fuchen@qq.com</a>。</p>
 				</div>
 				<div class="provide-list">
 					<h3 class="provide-title">微招聘服务</h3>
-					<p class="provide-description">希望在环球旅讯微招聘中发布招聘信息？或希望申请微招聘某项职位？请联系</p>
+					<p class="provide-description">希望在习大大微招聘中发布招聘信息？或希望申请微招聘某项职位？请联系</p>
 					<p class="tel-email">（86）20 9999 9999 或 <a class="email-link" href="">fuchen@qq.com</a>。</p>
 				</div>
 				<div class="provide-list">
-					<h3 class="provide-title">加入环球旅讯</h3>
-					<p class="provide-description">希望成为环球旅讯团队一员？请联系</p>
+					<h3 class="provide-title">加入习大大</h3>
+					<p class="provide-description">希望成为习大大团队一员？请联系</p>
 					<p class="tel-email">（86）20 9999 9999 或 <a class="email-link" href="">fuchen@qq.com</a>。</p>
 				</div>
 				<div class="provide-list">
 					<h3 class="provide-title">吐槽产品/反馈意见</h3>
-					<p class="provide-description">使用环球旅讯产品时遇到问题？对产品有更好的完善意见？请联系</p>
+					<p class="provide-description">使用习大大产品时遇到问题？对产品有更好的完善意见？请联系</p>
 					<p class="tel-email">（86）20 9999 9999 转 802 或 <a class="email-link" href="">fuchen@qq.com</a>。</p>
 				</div>
 			</div>

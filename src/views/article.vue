@@ -21,7 +21,7 @@
 							</template>
 						</div>
 						<div class="article-attention">
-							© 以商业目的使用环球旅讯拥有版权的内容，须经过环球旅讯书面授权。非商业目的使用，请遵循
+							© 以商业目的使用习大大拥有版权的内容，须经过习大大书面授权。非商业目的使用，请遵循
 							<a class="article-link" href="" target="_blank">CC BY-NC4.0</a>
 						</div>
 					</div>

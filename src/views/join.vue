@@ -5,7 +5,7 @@
 			<div class="banner-title">
 				<img class="banner-img" src="../assets/join-banner-text.png">
 			</div>
-			<p class="banner-text">环球旅讯 是全球领先的旅游商业和科技媒体。我们致力于以独立的新闻态度，关注和报道影响旅游业发展的新趋势、新模式和新科技。</p>
+			<p class="banner-text">习大大 是全球领先的旅游商业和科技媒体。我们致力于以独立的新闻态度，关注和报道影响旅游业发展的新趋势、新模式和新科技。</p>
 		</div>
 		<div class="our-team">
 			<div class="container">
@@ -108,63 +108,53 @@ export default {
 			],
 			workList: [
 				{
-					img: require("../assets/worktogether/charlie.png"),
-					name: "Charlie",
-					text: "从一个爱好到一份事业，凭的是对行业的那份爱，我们走过了 12 个年头；从一个人，到一个团队，我们在追逐梦想的路上无所畏惧。你会是我们中间的那一个吗？"
-				},
-				{
-					img: require("../assets/worktogether/echo.png"),
-					name: "Echo",
+					img: require("../assets/worktogether/worktogether.jpg"),
+					name: "Fuchen",
 					text: "不甘平凡，就和 TDer 一起，不断挑战自己的舒适圈！！！"
 				},
 				{
-					img: require("../assets/worktogether/gini.png"),
-					name: "Gini",
+					img: require("../assets/worktogether/worktogether.jpg"),
+					name: "Fuchen",
 					text: "这儿促人向上，充满斗志，期待你的加入 :)"
 				},
 				{
-					img: require("../assets/worktogether/gogo.png"),
-					name: "Gogo",
-					text: "这里年轻并充满活力，和朝气蓬勃的伙伴们一起不断突破、不断创造，在环球旅讯你将发现超乎想象的自己。"
+					img: require("../assets/worktogether/worktogether.jpg"),
+					name: "Fuchen",
+					text: "这里年轻并充满活力，和朝气蓬勃的伙伴们一起不断突破、不断创造，在习大大你将发现超乎想象的自己。"
 				},
 				{
-					img: require("../assets/worktogether/joseph.png"),
-					name: "Joseph",
-					text: "想知道为什么1841年成立的全球第一家旅行社终于进入中国了吗？想知道为什么说中国航空公司都是高速路上的重型坦克？还有很多关于旅行行业的问题值得探讨，那么，来吧，我们能一起挖掘。"
-				},
-				{
-					img: require("../assets/worktogether/lee.png"),
-					name: "Lee",
+					img: require("../assets/worktogether/worktogether.jpg"),
+					name: "Fuchen",
 					text: "看前一小时雷厉风行提方案的人，午休刷着B站傻笑，我时常觉得眩晕。这样一群人偶尔18岁，偶尔48岁。"
 				},
 				{
-					img: require("../assets/worktogether/ling.png"),
-					name: "Ling",
+					img: require("../assets/worktogether/worktogether.jpg"),
+					name: "Fuchen",
 					text: "有一份令人幸福的工作是什么体验？干有理想的活，做有情怀的人。"
 				},
 				{
-					img: require("../assets/worktogether/mark.png"),
-					name: "Mark",
+					img: require("../assets/worktogether/worktogether.jpg"),
+					name: "Fuchen",
 					text: "我们的征途是星辰大海。To be, or not to be. That is the question."
 				},
 				{
-					img: require("../assets/worktogether/mary.png"),
-					name: "Mary",
+					img: require("../assets/worktogether/worktogether.jpg"),
+					name: "Fuchen",
 					text: "你很有逗逼的天分，来和我们一起闯荡江湖。"
 				},
 				{
-					img: require("../assets/worktogether/vicky.png"),
-					name: "Vicky",
-					text: "如果你爱她/他，就让她/他来环旅，因为这里的人专业得让人敬佩；如果你恨她/他，就让她/他来环旅，因为这里的人逗逼得让人无语。"
+					img: require("../assets/worktogether/worktogether.jpg"),
+					name: "Fuchen",
+					text: "如果你爱她/他，就让她/他来习大大，因为这里的人专业得让人敬佩；如果你恨她/他，就让她/他来习大大，因为这里的人逗逼得让人无语。"
 				},
 				{
-					img: require("../assets/worktogether/virginia.png"),
-					name: "Virginia",
-					text: "Don't set yourself boundaries. 在环旅，请不要吝啬你的想法，请不要停止思考的步伐。对了，我现在缺一名同桌，一线临窗位，能观蓝天能赏日落，你要不要来？"
+					img: require("../assets/worktogether/worktogether.jpg"),
+					name: "Fuchen",
+					text: "Don't set yourself boundaries. 在习大大，请不要吝啬你的想法，请不要停止思考的步伐。对了，我现在缺一名同桌，一线临窗位，能观蓝天能赏日落，你要不要来？"
 				},
 				{
-					img: require("../assets/worktogether/yan.png"),
-					name: "Yan",
+					img: require("../assets/worktogether/worktogether.jpg"),
+					name: "Fuchen",
 					text: "来让身和心都在路上，我还没观过世界。这里，我世界观的起始。"
 				}
 			]
