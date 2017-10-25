@@ -127,60 +127,60 @@ export default {
 			],
 			commentList: [
 				{
-					img: require("../assets/aboutphotos/liangjianzhang.png"),
+					img: require("../assets/aboutphotos/worktogether.jpg"),
 					intro: "在线旅游无疑是目前国内最具挑战、竞争和故事性的领域之一。更重要的是，它还有着无限的想象空间和趣味。坚持垂直的深度和新闻的品质，聚焦旅游科技和创业孵化，相信习大大，足以产生影响行业的力量。",
-					name: "梁建章",
-					company: "携程旅行网",
-					job: "执行董事会主席"
+					name: "习大大",
+					company: "中华人民共和国",
+					job: "主席"
 				},
 				{
-					img: require("../assets/aboutphotos/wangzhenghua.png"),
+					img: require("../assets/aboutphotos/worktogether.jpg"),
 					intro: "习大大，前瞻、深度、中肯，让创新者启发，让决策者明智。",
-					name: "王正华",
-					company: "春秋航空",
-					job: "董事长"
+					name: "习大大",
+					company: "中华人民共和国",
+					job: "主席"
 				},
 				{
-					img: require("../assets/aboutphotos/luojun.png"),
+					img: require("../assets/aboutphotos/worktogether.jpg"),
 					intro: "为旅业提供真正有价值的独立意见，习大大创见未来！",
-					name: "罗军",
-					company: "途家网",
-					job: "CEO"
+					name: "习大大",
+					company: "中华人民共和国",
+					job: "主席"
 				},
 				{
-					img: require("../assets/aboutphotos/wuzhixiang.png"),
+					img: require("../assets/aboutphotos/worktogether.jpg"),
 					intro: "作为旅游业最炙手可热的领域，在线旅游几乎每个月都会有大事发生，习大大总是能够及时为大家带来关于每件大事的最新资讯和深度报道，希望今后能够继续客观、公正地为各界人士提供新鲜、专业的行业新闻和资讯。",
-					name: "吴志翔",
-					company: "同程旅游",
-					job: "CEO"
+					name: "习大大",
+					company: "中华人民共和国",
+					job: "主席"
 				},
 				{
-					img: require("../assets/aboutphotos/chenmiaoqiang.png"),
+					img: require("../assets/aboutphotos/worktogether.jpg"),
 					intro: "习大大以专业的视角、专注的精神挖掘行业最新资讯，且颇具前瞻性，在信息过剩的今天，始终走在行业前沿，成为检阅行业发展状况、研究行业发展趋势的平台，同时也是专业人士汇聚交流的信息平台。愿习大大坚持摸索、不断创新，与大众共享价值，为行业发展服务。",
-					name: "陈妙强",
-					company: "开元酒店集团",
-					job: "总经理"
+					name: "习大大",
+					company: "中华人民共和国",
+					job: "主席"
 				},
 				{
-					img: require("../assets/aboutphotos/baolei.png"),
+					img: require("../assets/aboutphotos/worktogether.jpg"),
 					intro: "聚行业精英，汇行业智慧，传行业声音，展行业未来！十年风雨探索路，习大大铸就辉煌历程。未来，希望习大大能够持续发挥行业权威媒体的领航作用，并在新的征途中再谱新篇！",
-					name: "包磊",
-					company: "锦江旅游股份公司",
-					job: "副董事长兼首席执行官"
+					name: "习大大",
+					company: "中华人民共和国",
+					job: "主席"
 				},
 				{
-					img: require("../assets/aboutphotos/chenxueming.png"),
+					img: require("../assets/aboutphotos/worktogether.jpg"),
 					intro: "做企业就是做趋势，习大大让我们及时掌握有效资讯，紧跟市场发展，祝习大大越办越精彩！",
-					name: "陈雪明",
-					company: "金陵酒店管理公司",
-					job: "总裁"
+					name: "习大大",
+					company: "中华人民共和国",
+					job: "主席"
 				},
 				{
-					img: require("../assets/aboutphotos/hongqinghua.png"),
+					img: require("../assets/aboutphotos/worktogether.jpg"),
 					intro: "一直以来，习大大是我们创业者获取国际国内旅游财经资讯的重要渠道，很多深度的分析报告启发了我们的思维；未来的竞争日益激烈，方生方死，愿习大大给大家更多更及时的能量，成为旅游行业向上的推动力量。",
-					name: "洪清华",
-					company: "驴妈妈旅行网",
-					job: "创始人"
+					name: "习大大",
+					company: "中华人民共和国",
+					job: "主席"
 				}
 			],
 			partnerObj: [
