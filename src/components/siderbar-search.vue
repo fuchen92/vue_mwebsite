@@ -5,7 +5,7 @@
                 <div class="search-arrow lt" @click="hideSearch"></div>
                 <div class="search-btn rt">搜索</div>
                 <div class="search-input-container">
-                    <input type="text" class="search-input" id="searchInput" placeholder="请输入关键字">
+                    <input type="text" class="search-input" id="searchInput" placeholder="请输入关键字（搜索功能未实现）">
                 </div>
             </div>
 		</div>
