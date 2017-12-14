@@ -120,7 +120,7 @@ export default {
 			advertise2: {
 				id: "xcode82",
 				link: "",
-				img: ""
+				img: require("../assets/advertise-1.jpg")
 			},
 			newsList: "",
 			newsList2: "",
