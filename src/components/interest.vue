@@ -33,7 +33,7 @@ export default {
     padding: 50px 0;
 }
 .interest-title {
-	font-size: 16px;
+	font-size: 15px;
     margin-bottom: 30px;
     color: @post-title-color;
 }
@@ -60,7 +60,7 @@ export default {
 .interest-article {
     top: 0;
     font-weight: normal;
-	font-size: 16px;
+	font-size: 14px;
 	> a {
 		color: @post-title-color;
 		overflow: hidden;

@@ -202,7 +202,9 @@ export default {
 	},
 	mounted () {
 		var productSwitch = new Swiper(".swiper-container", {
-			pagination: ".swiper-pagination"
+			pagination: {
+				el: ".swiper-pagination"
+			}
 		});
 	}
 }
@@ -311,6 +313,10 @@ export default {
     background-color: #A0A0A0;
     margin: 0 5px;
     opacity: 1;
+}
+.swiper-container-horizontal>.swiper-pagination-bullets .swiper-pagination-bullet-active {
+    background-color: #E3E3E3 !important;
+    border: 1px solid #006395 !important;
 }
 .comment-photo {
     background-size: 90%;
